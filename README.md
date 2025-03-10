@@ -9,6 +9,7 @@
 
 - [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment)
 - Run `npm install`
+- Run `npx pod-install ios`
 
 ## Daily workflow
 
