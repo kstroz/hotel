@@ -1,9 +1,10 @@
+import { Hotel } from '@api/types/hotel';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type HomeStackNavigatorParamList = {
   Hotels: undefined;
   HotelDetails: {
-    id: number;
+    hotel: Hotel;
   };
 };
 

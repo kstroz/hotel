@@ -3,11 +3,15 @@ import { View, Text } from 'react-native';
 
 export const HotelDetails = () => {
   const route = useHomeRoute();
-  const { id } = route.params ?? {};
+  const { hotel } = route.params ?? {};
+  const { name, price, currency } = hotel ?? {};
 
   return (
     <View>
-      <Text>Detail of hotel with id: {id}</Text>
+      <Text>{name}</Text>
+      <Text>
+        Price: {price} {currency}
+      </Text>
     </View>
   );
 };

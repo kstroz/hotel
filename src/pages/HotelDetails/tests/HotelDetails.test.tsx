@@ -1,15 +1,26 @@
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 import { RootNavigation } from '@navigation/RootNavigation';
+import { renderWithProviders, setupAxios } from '@tests/tests.helpers';
+import { HttpStatusCode } from 'axios';
+import { API_URLS } from '@api/api.consts';
+import { mockHotels } from '@tests/hotelMocks';
 
 describe('Hotel details', () => {
-  it('should navigate to first hotel', async () => {
-    render(<RootNavigation />);
+  const axios = setupAxios();
 
-    const listItem = await screen.findByTestId('hotel-1');
+  it('should navigate to first hotel', async () => {
+    axios.onGet(API_URLS.HOTELS).replyOnce(HttpStatusCode.Ok, mockHotels);
+    renderWithProviders(<RootNavigation />);
+
+    const hotel = mockHotels[0];
+    const { id, price, currency } = hotel;
+
+    const listItem = await screen.findByTestId(`hotel-${id}`);
     expect(listItem).toBeTruthy();
 
     fireEvent.press(listItem);
-    expect(screen.getByText('Detail of hotel with id: 1')).toBeTruthy();
+
+    expect(screen.getByText(`Price: ${price} ${currency}`)).toBeTruthy();
   });
 });
