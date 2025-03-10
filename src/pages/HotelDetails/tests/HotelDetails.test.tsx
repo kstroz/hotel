@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react-native';
 import { RootNavigation } from '@navigation/RootNavigation';
 
-describe('Hotels', () => {
+describe('Hotel details', () => {
   it('should navigate to first hotel', async () => {
     render(<RootNavigation />);
 
