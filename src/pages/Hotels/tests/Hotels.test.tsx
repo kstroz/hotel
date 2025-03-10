@@ -1,14 +1,24 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react-native';
+import { screen } from '@testing-library/react-native';
 import { RootNavigation } from '@navigation/RootNavigation';
+import { renderWithProviders, setupAxios } from '@tests/tests.helpers';
+
+import { mockHotels } from '@tests/hotelMocks';
+import { API_URLS } from '@api/api.consts';
+import { HttpStatusCode } from 'axios';
 
 describe('Hotels', () => {
-  it('should check list of hotels', async () => {
-    render(<RootNavigation />);
+  const axios = setupAxios();
 
-    for (let i = 1; i <= 3; i++) {
-      const hotelEl = await screen.findByTestId(`hotel-${i}`);
-      expect(hotelEl).toBeTruthy();
+  it('should check list of hotels', async () => {
+    axios.onGet(API_URLS.HOTELS).replyOnce(HttpStatusCode.Ok, mockHotels);
+
+    renderWithProviders(<RootNavigation />);
+
+    for (let i = 0; i < mockHotels.length; i++) {
+      expect(
+        await screen.findByTestId(`hotel-${mockHotels[i].id}`),
+      ).toBeTruthy();
     }
   });
 });

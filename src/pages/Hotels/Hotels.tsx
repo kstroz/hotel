@@ -4,27 +4,31 @@ import { hotelsStyles } from './Hotels.styles';
 
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
 import { useHomeNavigation } from '@navigation/hooks';
-
-const dummyData = [
-  { id: 1, name: 'Hotel 1' },
-  { id: 2, name: 'Hotel 2' },
-  { id: 3, name: 'Hotel 3' },
-];
+import { useHotels } from '@api/hooks';
 
 export const Hotels: FC = () => {
-  const navigation = useHomeNavigation();
+  const nav = useHomeNavigation();
+  const { hotels, areHotelsLoading } = useHotels();
+
+  if (areHotelsLoading) {
+    return (
+      <View style={hotelsStyles.root}>
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={hotelsStyles.root}>
       <FlatList
-        data={dummyData}
-        keyExtractor={item => item.id.toString()}
+        data={hotels}
+        keyExtractor={hotel => hotel.id.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity
             testID={`hotel-${item.id}`}
             onPress={() =>
-              navigation.navigate(HomeStackScreenTitles.HotelDetails, {
-                id: item.id,
+              nav.navigate(HomeStackScreenTitles.HotelDetails, {
+                hotel: item,
               })
             }>
             <Text>{item.name}</Text>
