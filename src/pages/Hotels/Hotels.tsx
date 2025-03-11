@@ -1,14 +1,27 @@
-import { FC } from 'react';
-import { View, FlatList, TouchableOpacity, Text } from 'react-native';
+import { FC, useCallback, useState } from 'react';
+import { View, FlatList, Text, Image } from 'react-native';
 import { hotelsStyles } from './Hotels.styles';
-
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
 import { useHomeNavigation } from '@navigation/hooks';
 import { useHotels } from '@api/hooks';
+import { Card } from 'react-native-paper';
+import { useFocusEffect } from '@react-navigation/native';
+
+const fallbackImage =
+  'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';
 
 export const Hotels: FC = () => {
   const nav = useHomeNavigation();
   const { hotels, areHotelsLoading } = useHotels();
+  const [images, setImages] = useState<string[]>([]);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (hotels?.length) {
+        setImages(hotels.map(({ gallery }) => gallery[0] ?? fallbackImage));
+      }
+    }, [hotels]),
+  );
 
   if (areHotelsLoading) {
     return (
@@ -23,16 +36,37 @@ export const Hotels: FC = () => {
       <FlatList
         data={hotels}
         keyExtractor={hotel => hotel.id.toString()}
-        renderItem={({ item }) => (
-          <TouchableOpacity
+        style={hotelsStyles.list}
+        contentContainerStyle={hotelsStyles.listContent}
+        renderItem={({ item, index }) => (
+          <Card
             testID={`hotel-${item.id}`}
             onPress={() =>
               nav.navigate(HomeStackScreenTitles.HotelDetails, {
                 hotel: item,
               })
             }>
-            <Text>{item.name}</Text>
-          </TouchableOpacity>
+            <View style={hotelsStyles.imageWrapper}>
+              <Image
+                source={{
+                  uri: images?.[index] ?? fallbackImage,
+                }}
+                style={hotelsStyles.cardImage}
+                resizeMode="stretch"
+                onError={() => {
+                  setImages(prev =>
+                    prev.map((img, i) => (i === index ? fallbackImage : img)),
+                  );
+                }}
+              />
+            </View>
+            <Card.Title
+              title={item.name}
+              titleVariant="titleMedium"
+              subtitle={item.location.address}
+              subtitleVariant="labelMedium"
+            />
+          </Card>
         )}
       />
     </View>
