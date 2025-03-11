@@ -1,9 +1,16 @@
+import { COLORS } from '@theme/Colors';
 import { StyleSheet } from 'react-native';
 
 export const hotelsStyles = StyleSheet.create({
   root: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
+    gap: 20,
+    backgroundColor: COLORS.Primary,
+  },
+  loaderElements: {
+    color: COLORS.White,
   },
   list: {
     width: '100%',

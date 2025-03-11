@@ -4,9 +4,10 @@ import { hotelsStyles } from './Hotels.styles';
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
 import { useHomeNavigation } from '@navigation/hooks';
 import { useHotels } from '@api/hooks';
-import { Card, Icon, Text } from 'react-native-paper';
+import { ActivityIndicator, Card, Icon, Text } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
 import { Rating } from '@components/Rating';
+import { COLORS } from '@theme/Colors';
 
 const fallbackImage =
   'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';
@@ -15,6 +16,12 @@ export const Hotels: FC = () => {
   const nav = useHomeNavigation();
   const { hotels, areHotelsLoading } = useHotels();
   const [images, setImages] = useState<string[]>([]);
+
+  useFocusEffect(
+    useCallback(() => {
+      nav.setOptions({ headerShown: !areHotelsLoading });
+    }, [areHotelsLoading, nav]),
+  );
 
   useFocusEffect(
     useCallback(() => {
@@ -27,59 +34,60 @@ export const Hotels: FC = () => {
   if (areHotelsLoading) {
     return (
       <View style={hotelsStyles.root}>
-        <Text>Loading...</Text>
+        <ActivityIndicator size={68} color={COLORS.White} />
+        <Text variant="displayMedium" style={hotelsStyles.loaderElements}>
+          Hotel app
+        </Text>
       </View>
     );
   }
 
   return (
-    <View style={hotelsStyles.root}>
-      <FlatList
-        data={hotels}
-        keyExtractor={hotel => hotel.id.toString()}
-        style={hotelsStyles.list}
-        contentContainerStyle={hotelsStyles.listContent}
-        renderItem={({ item, index }) => (
-          <Card
-            testID={`hotel-${item.id}`}
-            onPress={() =>
-              nav.navigate(HomeStackScreenTitles.HotelDetails, {
-                hotel: item,
-              })
-            }>
-            <View style={hotelsStyles.imageWrapper}>
-              <Image
-                source={{
-                  uri: images?.[index] ?? fallbackImage,
-                }}
-                style={hotelsStyles.cardImage}
-                resizeMode="stretch"
-                onError={() => {
-                  setImages(prev =>
-                    prev.map((img, i) => (i === index ? fallbackImage : img)),
-                  );
-                }}
-              />
-            </View>
-            <Card.Title
-              title={item.name}
-              titleVariant="titleMedium"
-              subtitle={`${item.location.address}, ${item.location.city}`}
-              subtitleVariant="labelMedium"
+    <FlatList
+      data={hotels}
+      keyExtractor={hotel => hotel.id.toString()}
+      style={hotelsStyles.list}
+      contentContainerStyle={hotelsStyles.listContent}
+      renderItem={({ item, index }) => (
+        <Card
+          testID={`hotel-${item.id}`}
+          onPress={() =>
+            nav.navigate(HomeStackScreenTitles.HotelDetails, {
+              hotel: item,
+            })
+          }>
+          <View style={hotelsStyles.imageWrapper}>
+            <Image
+              source={{
+                uri: images?.[index] ?? fallbackImage,
+              }}
+              style={hotelsStyles.cardImage}
+              resizeMode="stretch"
+              onError={() => {
+                setImages(prev =>
+                  prev.map((img, i) => (i === index ? fallbackImage : img)),
+                );
+              }}
             />
-            <Card.Content>
-              <Rating rate={item.stars} />
-              <View style={hotelsStyles.costWrapper}>
-                <Icon
-                  source={item.currency === 'EUR' ? 'currency-eur' : ''}
-                  size={20}
-                />
-                <Text variant="titleLarge">{item.price}</Text>
-              </View>
-            </Card.Content>
-          </Card>
-        )}
-      />
-    </View>
+          </View>
+          <Card.Title
+            title={item.name}
+            titleVariant="titleMedium"
+            subtitle={`${item.location.address}, ${item.location.city}`}
+            subtitleVariant="labelMedium"
+          />
+          <Card.Content>
+            <Rating rate={item.stars} />
+            <View style={hotelsStyles.costWrapper}>
+              <Icon
+                source={item.currency === 'EUR' ? 'currency-eur' : ''}
+                size={20}
+              />
+              <Text variant="titleLarge">{item.price}</Text>
+            </View>
+          </Card.Content>
+        </Card>
+      )}
+    />
   );
 };
