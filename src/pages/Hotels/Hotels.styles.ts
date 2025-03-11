@@ -22,4 +22,9 @@ export const hotelsStyles = StyleSheet.create({
     height: 150,
     resizeMode: 'stretch',
   },
+  costWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
 });
