@@ -5,11 +5,13 @@ import { Image, View } from 'react-native';
 import { Card, Icon, Text } from 'react-native-paper';
 import { HotelCardProps } from './HotelCard.types';
 import { hotelsCardStyles } from './HotelCard.styles';
-import Carousel from 'react-native-reanimated-carousel';
+import Carousel, { Pagination } from 'react-native-reanimated-carousel';
 import { CAROUSEL_WIDTH, FALLBACK_IMG } from './HotelCard.consts';
+import { useSharedValue } from 'react-native-reanimated';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
+  const progress = useSharedValue<number>(0);
 
   return (
     <Card testID={testID} onPress={onPress}>
@@ -19,6 +21,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
           height={hotelsCardStyles.cardImage.height}
           data={images}
           loop={false}
+          onProgressChange={progress}
           renderItem={({ index }) => (
             <Image
               source={{
@@ -32,6 +35,13 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
               }}
             />
           )}
+        />
+        <Pagination.Basic
+          progress={progress}
+          data={images}
+          dotStyle={hotelsCardStyles.dot}
+          activeDotStyle={hotelsCardStyles.activeDot}
+          containerStyle={hotelsCardStyles.pagination}
         />
       </View>
       <Card.Title
