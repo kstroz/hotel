@@ -8,6 +8,7 @@ import { Card, Icon, Text } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
 import { Rating } from '@components/Rating';
 import { Loader } from '@components/Loader';
+import { UserRating } from '@components/UserRating';
 
 const fallbackImage =
   'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';
@@ -68,7 +69,11 @@ export const Hotels: FC = () => {
             subtitleVariant="labelMedium"
           />
           <Card.Content>
-            <Rating rate={item.stars} />
+            <View style={hotelsStyles.ratingsWrapper}>
+              <Rating rate={item.stars} />
+              <View style={hotelsStyles.divider} />
+              <UserRating rate={item.userRating} />
+            </View>
             <View style={hotelsStyles.costWrapper}>
               <Icon
                 source={item.currency === 'EUR' ? 'currency-eur' : ''}

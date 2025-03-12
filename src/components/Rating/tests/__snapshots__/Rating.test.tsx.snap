@@ -18,7 +18,7 @@ exports[`Rating renders correctly 1`] = `
     style={
       [
         {
-          "color": "#faaf00",
+          "color": "#f2007d",
           "fontSize": 18,
         },
         [
@@ -54,7 +54,7 @@ exports[`Rating renders correctly 1`] = `
     style={
       [
         {
-          "color": "#faaf00",
+          "color": "#f2007d",
           "fontSize": 18,
         },
         [
@@ -90,7 +90,7 @@ exports[`Rating renders correctly 1`] = `
     style={
       [
         {
-          "color": "#faaf00",
+          "color": "#f2007d",
           "fontSize": 18,
         },
         [
@@ -126,7 +126,7 @@ exports[`Rating renders correctly 1`] = `
     style={
       [
         {
-          "color": "#faaf00",
+          "color": "#f2007d",
           "fontSize": 18,
         },
         [
@@ -162,7 +162,7 @@ exports[`Rating renders correctly 1`] = `
     style={
       [
         {
-          "color": "#faaf00",
+          "color": "#f2007d",
           "fontSize": 18,
         },
         [
