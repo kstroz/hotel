@@ -10,7 +10,8 @@
       "@navigation/*": ["navigation/*"],
       "@pages/*": ["pages/*"],
       "@tests/*": ["tests/*"],
-      "@theme/*": ["theme/*"]
+      "@theme/*": ["theme/*"],
+      "@utils/*": ["utils/*"]
     }
   }
 }
