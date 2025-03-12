@@ -14,13 +14,12 @@ describe('Hotel details', () => {
     renderWithProviders(<RootNavigation />);
 
     const hotel = mockHotels[0];
-    const { id, price, currency } = hotel;
 
-    const listItem = await screen.findByTestId(`hotel-${id}`);
+    const listItem = await screen.findByTestId(`hotel-${hotel.id}`);
     expect(listItem).toBeTruthy();
 
     fireEvent.press(listItem);
 
-    expect(screen.getByText(`Price: ${price} ${currency}`)).toBeTruthy();
+    expect(screen).toMatchSnapshot();
   });
 });

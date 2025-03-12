@@ -24,6 +24,7 @@ module.exports = {
           '@pages': './src/pages',
           '@tests': './src/tests',
           '@theme': './src/theme',
+          '@utils': './src/utils',
         },
       },
     ],

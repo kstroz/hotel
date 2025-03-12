@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <Text
+    accessibilityElementsHidden={true}
+    allowFontScaling={false}
+    importantForAccessibility="no-hide-descendants"
+    pointerEvents="none"
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#f2007d",
+          "fontSize": 18,
+        },
+        [
+          {
+            "lineHeight": 18,
+            "transform": [
+              {
+                "scaleX": 1,
+              },
+            ],
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰓎
+  </Text>
+  <Text
+    accessibilityElementsHidden={true}
+    allowFontScaling={false}
+    importantForAccessibility="no-hide-descendants"
+    pointerEvents="none"
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#f2007d",
+          "fontSize": 18,
+        },
+        [
+          {
+            "lineHeight": 18,
+            "transform": [
+              {
+                "scaleX": 1,
+              },
+            ],
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰓎
+  </Text>
+  <Text
+    accessibilityElementsHidden={true}
+    allowFontScaling={false}
+    importantForAccessibility="no-hide-descendants"
+    pointerEvents="none"
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#f2007d",
+          "fontSize": 18,
+        },
+        [
+          {
+            "lineHeight": 18,
+            "transform": [
+              {
+                "scaleX": 1,
+              },
+            ],
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰓎
+  </Text>
+  <Text
+    accessibilityElementsHidden={true}
+    allowFontScaling={false}
+    importantForAccessibility="no-hide-descendants"
+    pointerEvents="none"
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#f2007d",
+          "fontSize": 18,
+        },
+        [
+          {
+            "lineHeight": 18,
+            "transform": [
+              {
+                "scaleX": 1,
+              },
+            ],
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰓒
+  </Text>
+  <Text
+    accessibilityElementsHidden={true}
+    allowFontScaling={false}
+    importantForAccessibility="no-hide-descendants"
+    pointerEvents="none"
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#f2007d",
+          "fontSize": 18,
+        },
+        [
+          {
+            "lineHeight": 18,
+            "transform": [
+              {
+                "scaleX": 1,
+              },
+            ],
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰓒
+  </Text>
+</View>
+`;
