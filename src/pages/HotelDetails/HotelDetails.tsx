@@ -1,14 +1,14 @@
+import { HotelCard } from '@components/HotelCard';
 import { PageWrapper } from '@components/PageWrapper';
 import { useHomeNavigation, useHomeRoute } from '@navigation/hooks';
 import { useFocusEffect } from '@react-navigation/native';
 import { useCallback } from 'react';
-import { Text } from 'react-native';
 
 export const HotelDetails = () => {
   const nav = useHomeNavigation();
   const route = useHomeRoute();
   const { hotel } = route.params ?? {};
-  const { name, price, currency } = hotel ?? {};
+  const { name } = hotel!;
 
   useFocusEffect(
     useCallback(() => {
@@ -20,10 +20,7 @@ export const HotelDetails = () => {
 
   return (
     <PageWrapper>
-      <Text>{name}</Text>
-      <Text>
-        Price: {price} {currency}
-      </Text>
+      <HotelCard hotel={hotel!} />
     </PageWrapper>
   );
 };
