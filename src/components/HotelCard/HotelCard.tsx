@@ -5,9 +5,8 @@ import { Image, View } from 'react-native';
 import { Card, Icon, Text } from 'react-native-paper';
 import { HotelCardProps } from './HotelCard.types';
 import { hotelsCardStyles } from './HotelCard.styles';
-
-const fallbackImage =
-  'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';
+import Carousel from 'react-native-reanimated-carousel';
+import { CAROUSEL_WIDTH, FALLBACK_IMG } from './HotelCard.consts';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
@@ -15,14 +14,24 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   return (
     <Card testID={testID} onPress={onPress}>
       <View style={hotelsCardStyles.imageWrapper}>
-        <Image
-          source={{
-            uri: images[0],
-          }}
-          style={hotelsCardStyles.cardImage}
-          onError={() => {
-            setImages([fallbackImage]);
-          }}
+        <Carousel
+          width={CAROUSEL_WIDTH}
+          height={hotelsCardStyles.cardImage.height}
+          data={images}
+          loop={false}
+          renderItem={({ index }) => (
+            <Image
+              source={{
+                uri: images[index],
+              }}
+              style={hotelsCardStyles.cardImage}
+              onError={() => {
+                setImages(prev =>
+                  prev.map((img, i) => (i === index ? FALLBACK_IMG : img)),
+                );
+              }}
+            />
+          )}
         />
       </View>
       <Card.Title

@@ -585,22 +585,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1499779963/Swindon_yjsrwz.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -1155,22 +1140,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584265/g8wzbaqahffteguzal5d.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -1725,22 +1695,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584108/w5c81p3mvlymgutaklvx.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -2295,22 +2250,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/n88jigk27jtmvekqunbv.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -2865,22 +2805,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1430487613/Exterior_ajaxnb.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -3435,22 +3360,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035242/dvx34hv6neyhla6547zi.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -4005,22 +3915,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1585385209/t8bcs01xrouncqsja0kv.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -4575,22 +4470,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1602647435/hb6zwn52nnnu8qhgjlet.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -5145,22 +5025,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487792/1461_ho_02_p_2048x1536_hehoe6.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -5715,22 +5580,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               }
                             }
                             total={3}
-                          >
-                            <Image
-                              onError={[Function]}
-                              source={
-                                {
-                                  "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1529476568/Exterior_-_night_b6o9gw.jpg",
-                                }
-                              }
-                              style={
-                                {
-                                  "height": 150,
-                                  "resizeMode": "stretch",
-                                }
-                              }
-                            />
-                          </View>
+                          />
                           <View
                             style={
                               [
@@ -6371,22 +6221,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                         }
                       }
                       total={3}
-                    >
-                      <Image
-                        onError={[Function]}
-                        source={
-                          {
-                            "uri": "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1499779963/Swindon_yjsrwz.jpg",
-                          }
-                        }
-                        style={
-                          {
-                            "height": 150,
-                            "resizeMode": "stretch",
-                          }
-                        }
-                      />
-                    </View>
+                    />
                     <View
                       style={
                         [
