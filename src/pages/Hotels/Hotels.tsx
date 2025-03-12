@@ -4,10 +4,10 @@ import { hotelsStyles } from './Hotels.styles';
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
 import { useHomeNavigation } from '@navigation/hooks';
 import { useHotels } from '@api/hooks';
-import { ActivityIndicator, Card, Icon, Text } from 'react-native-paper';
+import { Card, Icon, Text } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
 import { Rating } from '@components/Rating';
-import { COLORS } from '@theme/Colors';
+import { Loader } from '@components/Loader';
 
 const fallbackImage =
   'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';
@@ -32,21 +32,13 @@ export const Hotels: FC = () => {
   );
 
   if (areHotelsLoading) {
-    return (
-      <View style={hotelsStyles.root}>
-        <ActivityIndicator size={68} color={COLORS.White} />
-        <Text variant="displayMedium" style={hotelsStyles.loaderElements}>
-          Hotel app
-        </Text>
-      </View>
-    );
+    return <Loader type="fullscreen" />;
   }
 
   return (
     <FlatList
       data={hotels}
       keyExtractor={hotel => hotel.id.toString()}
-      style={hotelsStyles.list}
       contentContainerStyle={hotelsStyles.listContent}
       renderItem={({ item, index }) => (
         <Card
@@ -62,7 +54,6 @@ export const Hotels: FC = () => {
                 uri: images?.[index] ?? fallbackImage,
               }}
               style={hotelsStyles.cardImage}
-              resizeMode="stretch"
               onError={() => {
                 setImages(prev =>
                   prev.map((img, i) => (i === index ? fallbackImage : img)),

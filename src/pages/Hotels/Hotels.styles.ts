@@ -1,31 +1,15 @@
-import { COLORS } from '@theme/Colors';
+import { pageWrapperStyles } from '@components/PageWrapper/PageWrapper.styles';
 import { StyleSheet } from 'react-native';
 
 export const hotelsStyles = StyleSheet.create({
-  root: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 20,
-    backgroundColor: COLORS.Primary,
-  },
-  loaderElements: {
-    color: COLORS.White,
-  },
-  list: {
-    width: '100%',
-  },
   listContent: {
-    marginHorizontal: 20,
-    paddingVertical: 20,
+    ...pageWrapperStyles.root,
     gap: 20,
-    alignItems: 'stretch',
   },
   imageWrapper: {
     padding: 10,
   },
   cardImage: {
-    width: '100%',
     height: 150,
     resizeMode: 'stretch',
   },

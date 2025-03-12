@@ -1,7 +1,8 @@
+import { PageWrapper } from '@components/PageWrapper';
 import { useHomeNavigation, useHomeRoute } from '@navigation/hooks';
 import { useFocusEffect } from '@react-navigation/native';
 import { useCallback } from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 
 export const HotelDetails = () => {
   const nav = useHomeNavigation();
@@ -18,11 +19,11 @@ export const HotelDetails = () => {
   );
 
   return (
-    <View>
+    <PageWrapper>
       <Text>{name}</Text>
       <Text>
         Price: {price} {currency}
       </Text>
-    </View>
+    </PageWrapper>
   );
 };
