@@ -24,7 +24,7 @@ export const useHotels = () => {
   });
 
   return {
-    hotels: data,
+    hotels: data ?? [],
     areHotelsLoading: isFetching,
   };
 };

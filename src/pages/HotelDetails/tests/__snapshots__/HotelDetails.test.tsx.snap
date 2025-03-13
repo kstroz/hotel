@@ -115,12 +115,457 @@ exports[`Hotel details should navigate to first hotel 1`] = `
               ]
             }
           >
+            <View
+              style={
+                {
+                  "marginHorizontal": 20,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "backgroundColor": "rgba(255, 255, 255, 1)",
+                    "borderRadius": 12,
+                    "shadowColor": "#000",
+                    "shadowOffset": {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.15,
+                    "shadowRadius": 10,
+                  }
+                }
+                testID="card-container-outer-layer"
+              >
+                <View
+                  collapsable={false}
+                  style={
+                    {
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "borderRadius": 12,
+                      "elevation": 4,
+                      "flex": undefined,
+                      "shadowColor": "#000",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.3,
+                      "shadowRadius": 3,
+                    }
+                  }
+                  testID="card-container"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexShrink": 1,
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="card"
+                  >
+                    <View
+                      borderRadiusStyles={{}}
+                      style={
+                        [
+                          {
+                            "paddingHorizontal": 16,
+                          },
+                          {
+                            "paddingVertical": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            [
+                              {
+                                "backgroundColor": "transparent",
+                                "borderBottomRightRadius": 0,
+                                "borderColor": "rgba(121, 116, 126, 1)",
+                                "borderRadius": 20,
+                                "borderRightWidth": 0,
+                                "borderTopRightRadius": 0,
+                                "borderWidth": 1,
+                              },
+                              {
+                                "borderStyle": "solid",
+                                "flex": 1,
+                                "minWidth": 76,
+                              },
+                              [
+                                undefined,
+                                {},
+                              ],
+                            ]
+                          }
+                        >
+                          <View
+                            accessibilityRole="button"
+                            accessibilityState={
+                              {
+                                "busy": undefined,
+                                "checked": false,
+                                "disabled": false,
+                                "expanded": undefined,
+                                "selected": undefined,
+                              }
+                            }
+                            accessibilityValue={
+                              {
+                                "max": undefined,
+                                "min": undefined,
+                                "now": undefined,
+                                "text": undefined,
+                              }
+                            }
+                            accessible={true}
+                            collapsable={false}
+                            focusable={true}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onResponderGrant={[Function]}
+                            onResponderMove={[Function]}
+                            onResponderRelease={[Function]}
+                            onResponderTerminate={[Function]}
+                            onResponderTerminationRequest={[Function]}
+                            onStartShouldSetResponder={[Function]}
+                            style={
+                              [
+                                {
+                                  "overflow": "hidden",
+                                },
+                                {
+                                  "borderBottomRightRadius": 0,
+                                  "borderRadius": 20,
+                                  "borderRightWidth": 0,
+                                  "borderTopRightRadius": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "center",
+                                    "paddingHorizontal": 16,
+                                    "paddingVertical": 9,
+                                  },
+                                  {
+                                    "paddingVertical": 5,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                collapsable={false}
+                                style={
+                                  {
+                                    "marginRight": 5,
+                                    "transform": [
+                                      {
+                                        "scale": 1,
+                                      },
+                                    ],
+                                  }
+                                }
+                                testID="undefined-icon"
+                              >
+                                <Text
+                                  accessibilityElementsHidden={true}
+                                  allowFontScaling={false}
+                                  importantForAccessibility="no-hide-descendants"
+                                  pointerEvents="none"
+                                  selectable={false}
+                                  style={
+                                    [
+                                      {
+                                        "color": "#3c3c3c",
+                                        "fontSize": 18,
+                                      },
+                                      [
+                                        {
+                                          "lineHeight": 18,
+                                          "transform": [
+                                            {
+                                              "scaleX": 1,
+                                            },
+                                          ],
+                                        },
+                                        {
+                                          "backgroundColor": "transparent",
+                                        },
+                                      ],
+                                      {
+                                        "fontFamily": "Material Design Icons",
+                                        "fontStyle": "normal",
+                                        "fontWeight": "normal",
+                                      },
+                                      {},
+                                    ]
+                                  }
+                                >
+                                  󰒺
+                                </Text>
+                              </View>
+                              <Text
+                                numberOfLines={1}
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      [
+                                        {
+                                          "textAlign": "center",
+                                        },
+                                        {
+                                          "color": "#3c3c3c",
+                                          "fontFamily": "System",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "letterSpacing": 0.1,
+                                          "lineHeight": 20,
+                                        },
+                                        {
+                                          "color": undefined,
+                                        },
+                                      ],
+                                    ],
+                                  ]
+                                }
+                                testID="undefined-label"
+                              >
+                                Sort
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            [
+                              {
+                                "backgroundColor": "transparent",
+                                "borderBottomLeftRadius": 0,
+                                "borderColor": "rgba(121, 116, 126, 1)",
+                                "borderRadius": 20,
+                                "borderTopLeftRadius": 0,
+                                "borderWidth": 1,
+                              },
+                              {
+                                "borderStyle": "solid",
+                                "flex": 1,
+                                "minWidth": 76,
+                              },
+                              [
+                                undefined,
+                                {},
+                              ],
+                            ]
+                          }
+                        >
+                          <View
+                            accessibilityRole="button"
+                            accessibilityState={
+                              {
+                                "busy": undefined,
+                                "checked": false,
+                                "disabled": false,
+                                "expanded": undefined,
+                                "selected": undefined,
+                              }
+                            }
+                            accessibilityValue={
+                              {
+                                "max": undefined,
+                                "min": undefined,
+                                "now": undefined,
+                                "text": undefined,
+                              }
+                            }
+                            accessible={true}
+                            collapsable={false}
+                            focusable={true}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onResponderGrant={[Function]}
+                            onResponderMove={[Function]}
+                            onResponderRelease={[Function]}
+                            onResponderTerminate={[Function]}
+                            onResponderTerminationRequest={[Function]}
+                            onStartShouldSetResponder={[Function]}
+                            style={
+                              [
+                                {
+                                  "overflow": "hidden",
+                                },
+                                {
+                                  "borderBottomLeftRadius": 0,
+                                  "borderRadius": 20,
+                                  "borderTopLeftRadius": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "center",
+                                    "paddingHorizontal": 16,
+                                    "paddingVertical": 9,
+                                  },
+                                  {
+                                    "paddingVertical": 5,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                collapsable={false}
+                                style={
+                                  {
+                                    "marginRight": 5,
+                                    "transform": [
+                                      {
+                                        "scale": 1,
+                                      },
+                                    ],
+                                  }
+                                }
+                                testID="undefined-icon"
+                              >
+                                <Text
+                                  accessibilityElementsHidden={true}
+                                  allowFontScaling={false}
+                                  importantForAccessibility="no-hide-descendants"
+                                  pointerEvents="none"
+                                  selectable={false}
+                                  style={
+                                    [
+                                      {
+                                        "color": "#3c3c3c",
+                                        "fontSize": 18,
+                                      },
+                                      [
+                                        {
+                                          "lineHeight": 18,
+                                          "transform": [
+                                            {
+                                              "scaleX": 1,
+                                            },
+                                          ],
+                                        },
+                                        {
+                                          "backgroundColor": "transparent",
+                                        },
+                                      ],
+                                      {
+                                        "fontFamily": "Material Design Icons",
+                                        "fontStyle": "normal",
+                                        "fontWeight": "normal",
+                                      },
+                                      {},
+                                    ]
+                                  }
+                                >
+                                  󰈲
+                                </Text>
+                              </View>
+                              <Text
+                                numberOfLines={1}
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      [
+                                        {
+                                          "textAlign": "center",
+                                        },
+                                        {
+                                          "color": "#3c3c3c",
+                                          "fontFamily": "System",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "letterSpacing": 0.1,
+                                          "lineHeight": 20,
+                                        },
+                                        undefined,
+                                      ],
+                                    ],
+                                  ]
+                                }
+                                testID="undefined-label"
+                              >
+                                Filter
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
             <RCTScrollView
               contentContainerStyle={
                 {
                   "gap": 20,
                   "marginHorizontal": 20,
-                  "paddingVertical": 20,
+                  "paddingVertical": 10,
                 }
               }
               data={
@@ -496,14 +941,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12321-container-outer-layer"
@@ -513,16 +958,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12321-container"
@@ -621,7 +1066,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -656,7 +1101,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -921,7 +1366,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -982,7 +1427,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -1016,7 +1461,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -1051,14 +1496,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12322-container-outer-layer"
@@ -1068,16 +1513,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12322-container"
@@ -1176,7 +1621,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -1211,7 +1656,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -1476,7 +1921,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -1537,7 +1982,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -1571,7 +2016,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -1606,14 +2051,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12323-container-outer-layer"
@@ -1623,16 +2068,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12323-container"
@@ -1731,7 +2176,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -1766,7 +2211,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2031,7 +2476,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -2092,7 +2537,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -2126,7 +2571,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2161,14 +2606,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12324-container-outer-layer"
@@ -2178,16 +2623,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12324-container"
@@ -2286,7 +2731,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2321,7 +2766,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2586,7 +3031,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -2647,7 +3092,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -2681,7 +3126,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2716,14 +3161,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12325-container-outer-layer"
@@ -2733,16 +3178,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12325-container"
@@ -2841,7 +3286,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -2876,7 +3321,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3141,7 +3586,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -3202,7 +3647,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -3236,7 +3681,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3271,14 +3716,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12326-container-outer-layer"
@@ -3288,16 +3733,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12326-container"
@@ -3396,7 +3841,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3431,7 +3876,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3696,7 +4141,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -3757,7 +4202,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -3791,7 +4236,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3826,14 +4271,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12327-container-outer-layer"
@@ -3843,16 +4288,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12327-container"
@@ -3951,7 +4396,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -3986,7 +4431,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -4251,7 +4696,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -4312,7 +4757,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -4346,7 +4791,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -4381,14 +4826,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12328-container-outer-layer"
@@ -4398,16 +4843,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12328-container"
@@ -4506,7 +4951,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -4541,7 +4986,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -4806,7 +5251,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -4867,7 +5312,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -4901,7 +5346,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -4936,14 +5381,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12329-container-outer-layer"
@@ -4953,16 +5398,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12329-container"
@@ -5061,7 +5506,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -5096,7 +5541,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -5361,7 +5806,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -5422,7 +5867,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -5456,7 +5901,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -5491,14 +5936,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     style={
                       {
                         "backgroundColor": "rgba(255, 255, 255, 1)",
-                        "borderRadius": 6,
+                        "borderRadius": 12,
                         "shadowColor": "#000",
                         "shadowOffset": {
-                          "height": 1,
+                          "height": 6,
                           "width": 0,
                         },
                         "shadowOpacity": 0.15,
-                        "shadowRadius": 3,
+                        "shadowRadius": 10,
                       }
                     }
                     testID="hotel-12330-container-outer-layer"
@@ -5508,16 +5953,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       style={
                         {
                           "backgroundColor": "rgba(255, 255, 255, 1)",
-                          "borderRadius": 6,
-                          "elevation": 1,
+                          "borderRadius": 12,
+                          "elevation": 4,
                           "flex": undefined,
                           "shadowColor": "#000",
                           "shadowOffset": {
-                            "height": 1,
+                            "height": 2,
                             "width": 0,
                           },
                           "shadowOpacity": 0.3,
-                          "shadowRadius": 1,
+                          "shadowRadius": 3,
                         }
                       }
                       testID="hotel-12330-container"
@@ -5616,7 +6061,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -5651,7 +6096,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -5916,7 +6361,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                         "textAlign": "left",
                                       },
                                       {
-                                        "color": "rgba(28, 27, 31, 1)",
+                                        "color": "#3c3c3c",
                                         "writingDirection": "ltr",
                                       },
                                       [
@@ -5977,7 +6422,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 style={
                                   [
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "fontSize": 20,
                                     },
                                     [
@@ -6011,7 +6456,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "rgba(28, 27, 31, 1)",
+                                      "color": "#3c3c3c",
                                       "writingDirection": "ltr",
                                     },
                                     [
@@ -6152,7 +6597,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                 [
                   {
                     "marginHorizontal": 20,
-                    "paddingVertical": 20,
+                    "paddingVertical": 10,
                   },
                   undefined,
                 ]
@@ -6163,14 +6608,14 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                 style={
                   {
                     "backgroundColor": "rgba(255, 255, 255, 1)",
-                    "borderRadius": 6,
+                    "borderRadius": 12,
                     "shadowColor": "#000",
                     "shadowOffset": {
-                      "height": 1,
+                      "height": 6,
                       "width": 0,
                     },
                     "shadowOpacity": 0.15,
-                    "shadowRadius": 3,
+                    "shadowRadius": 10,
                   }
                 }
                 testID="card-container-outer-layer"
@@ -6180,16 +6625,16 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                   style={
                     {
                       "backgroundColor": "rgba(255, 255, 255, 1)",
-                      "borderRadius": 6,
-                      "elevation": 1,
+                      "borderRadius": 12,
+                      "elevation": 4,
                       "flex": undefined,
                       "shadowColor": "#000",
                       "shadowOffset": {
-                        "height": 1,
+                        "height": 2,
                         "width": 0,
                       },
                       "shadowOpacity": 0.3,
-                      "shadowRadius": 1,
+                      "shadowRadius": 3,
                     }
                   }
                   testID="card-container"
@@ -6257,7 +6702,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 "textAlign": "left",
                               },
                               {
-                                "color": "rgba(28, 27, 31, 1)",
+                                "color": "#3c3c3c",
                                 "writingDirection": "ltr",
                               },
                               [
@@ -6292,7 +6737,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 "textAlign": "left",
                               },
                               {
-                                "color": "rgba(28, 27, 31, 1)",
+                                "color": "#3c3c3c",
                                 "writingDirection": "ltr",
                               },
                               [
@@ -6557,7 +7002,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   "textAlign": "left",
                                 },
                                 {
-                                  "color": "rgba(28, 27, 31, 1)",
+                                  "color": "#3c3c3c",
                                   "writingDirection": "ltr",
                                 },
                                 [
@@ -6618,7 +7063,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                           style={
                             [
                               {
-                                "color": "rgba(28, 27, 31, 1)",
+                                "color": "#3c3c3c",
                                 "fontSize": 20,
                               },
                               [
@@ -6652,7 +7097,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 "textAlign": "left",
                               },
                               {
-                                "color": "rgba(28, 27, 31, 1)",
+                                "color": "#3c3c3c",
                                 "writingDirection": "ltr",
                               },
                               [
