@@ -1124,7 +1124,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                6 Hercules Road | 1.31km from London
+                                6 Hercules Road, 1.31km from London
                               </Text>
                             </View>
                             <View />
@@ -1679,7 +1679,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                28-32 Belgrave Road Victoria | 2.59km from London
+                                28-32 Belgrave Road Victoria, 2.59km from London
                               </Text>
                             </View>
                             <View />
@@ -2234,7 +2234,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                1 Kings Cross Road | 1.88km from London
+                                1 Kings Cross Road, 1.88km from London
                               </Text>
                             </View>
                             <View />
@@ -2789,7 +2789,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                32-36 Hogarth Road Earl's Court | 5.43km from London
+                                32-36 Hogarth Road Earl's Court, 5.43km from London
                               </Text>
                             </View>
                             <View />
@@ -3344,7 +3344,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                136-144 City Road | 2.78km from London
+                                136-144 City Road, 2.78km from London
                               </Text>
                             </View>
                             <View />
@@ -3899,7 +3899,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                Behind Hertsmere Rd West India Quay | 6.67km from London
+                                Behind Hertsmere Rd West India Quay, 6.67km from London
                               </Text>
                             </View>
                             <View />
@@ -4454,7 +4454,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                2 Orange Street | 0.93km from London
+                                2 Orange Street, 0.93km from London
                               </Text>
                             </View>
                             <View />
@@ -5009,7 +5009,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                225 Kensington High Street | 5.61km from London
+                                225 Kensington High Street, 5.61km from London
                               </Text>
                             </View>
                             <View />
@@ -5564,7 +5564,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                71-79 Southwark Street | 1.41km from London
+                                71-79 Southwark Street, 1.41km from London
                               </Text>
                             </View>
                             <View />
@@ -6119,7 +6119,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                87 South Lambeth Road | 3.26km from London
+                                87 South Lambeth Road, 3.26km from London
                               </Text>
                             </View>
                             <View />
@@ -6763,7 +6763,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             ]
                           }
                         >
-                          6 Hercules Road | 1.31km from London
+                          6 Hercules Road, 1.31km from London
                         </Text>
                       </View>
                       <View />

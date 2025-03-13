@@ -12,7 +12,7 @@ import {
   LONDON_LAT,
   LONDON_LON,
 } from './HotelCard.consts';
-import { calculateDistance } from '@theme/Math';
+import { calculateDistance } from '@utils/math';
 import VerticalDivider from '@components/VerticalDivider';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
@@ -52,7 +52,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
       <Card.Title
         title={hotel.name}
         titleVariant="titleMedium"
-        subtitle={`${hotel.location.address} | ${parseFloat(
+        subtitle={`${hotel.location.address}, ${parseFloat(
           calculateDistance({
             lat1: hotel.location.latitude,
             lon1: hotel.location.longitude,
