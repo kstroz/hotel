@@ -11,8 +11,7 @@ import { Card, SegmentedButtons } from 'react-native-paper';
 import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
 import { Filter } from './Filter';
 import { Sort } from './Sort';
-
-type TBottomSheet = 'filter' | 'sort' | '';
+import { TBottomSheet } from './Hotels.types';
 
 export const Hotels: FC = memo(() => {
   const bottomSheetRef = useRef<BottomSheet>(null);
