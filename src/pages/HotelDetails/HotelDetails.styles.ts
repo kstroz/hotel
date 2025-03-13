@@ -6,6 +6,13 @@ export const hotelDetailsStyles = StyleSheet.create({
     gap: 20,
     justifyContent: 'space-between',
   },
+  checkWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  labels: {
+    alignItems: 'center',
+  },
   snackbarWrapper: { paddingHorizontal: 20, paddingBottom: 20 },
   snackbar: { backgroundColor: COLORS.Primary },
 });

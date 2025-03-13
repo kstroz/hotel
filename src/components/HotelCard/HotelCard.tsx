@@ -13,6 +13,7 @@ import {
   LONDON_LON,
 } from './HotelCard.consts';
 import { calculateDistance } from '@theme/Math';
+import VerticalDivider from '@components/VerticalDivider';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
@@ -65,7 +66,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
       <Card.Content>
         <View style={hotelsCardStyles.ratingsWrapper}>
           <Rating rate={hotel.stars} />
-          <View style={hotelsCardStyles.divider} />
+          <VerticalDivider />
           <UserRating rate={hotel.userRating} />
         </View>
         <View style={hotelsCardStyles.costWrapper}>
