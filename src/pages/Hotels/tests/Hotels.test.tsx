@@ -20,5 +20,7 @@ describe('Hotels', () => {
         await screen.findByTestId(`hotel-${mockHotels[i].id}`),
       ).toBeTruthy();
     }
+
+    expect(screen).toMatchSnapshot();
   });
 });

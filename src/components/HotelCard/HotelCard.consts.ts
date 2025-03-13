@@ -6,3 +6,6 @@ export const FALLBACK_IMG =
 
 export const CAROUSEL_WIDTH =
   Dimensions.get('window').width - pageWrapperStyles.root.marginHorizontal * 2;
+
+export const LONDON_LAT = 51.509865;
+export const LONDON_LON = -0.118092;
