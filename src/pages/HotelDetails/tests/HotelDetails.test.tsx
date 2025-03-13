@@ -6,10 +6,6 @@ import { HttpStatusCode } from 'axios';
 import { API_URLS } from '@api/api.consts';
 import { mockHotels } from '@tests/hotelMocks';
 
-// w/o node cannot process lengthy snapshot
-jest.mock('react-native-reanimated-carousel');
-jest.mock('@gorhom/bottom-sheet');
-
 describe('Hotel details', () => {
   const axios = setupAxios();
 

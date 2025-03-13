@@ -6599,7 +6599,10 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                     "marginHorizontal": 20,
                     "paddingVertical": 10,
                   },
-                  undefined,
+                  {
+                    "gap": 20,
+                    "justifyContent": "space-between",
+                  },
                 ]
               }
             >
@@ -7120,6 +7123,440 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                   </View>
                 </View>
               </View>
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "backgroundColor": "rgba(255, 255, 255, 1)",
+                    "borderRadius": 12,
+                    "shadowColor": "#000",
+                    "shadowOffset": {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.15,
+                    "shadowRadius": 10,
+                  }
+                }
+                testID="card-container-outer-layer"
+              >
+                <View
+                  collapsable={false}
+                  style={
+                    {
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "borderRadius": 12,
+                      "elevation": 4,
+                      "flex": undefined,
+                      "shadowColor": "#000",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.3,
+                      "shadowRadius": 3,
+                    }
+                  }
+                  testID="card-container"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexShrink": 1,
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="card"
+                  >
+                    <View
+                      borderRadiusStyles={{}}
+                      style={
+                        [
+                          {
+                            "paddingHorizontal": 16,
+                          },
+                          {
+                            "paddingVertical": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            [
+                              {
+                                "backgroundColor": "transparent",
+                                "borderBottomRightRadius": 0,
+                                "borderColor": "rgba(121, 116, 126, 1)",
+                                "borderRadius": 20,
+                                "borderRightWidth": 0,
+                                "borderTopRightRadius": 0,
+                                "borderWidth": 1,
+                              },
+                              {
+                                "borderStyle": "solid",
+                                "flex": 1,
+                                "minWidth": 76,
+                              },
+                              [
+                                undefined,
+                                {},
+                              ],
+                            ]
+                          }
+                        >
+                          <View
+                            accessibilityRole="button"
+                            accessibilityState={
+                              {
+                                "busy": undefined,
+                                "checked": false,
+                                "disabled": false,
+                                "expanded": undefined,
+                                "selected": undefined,
+                              }
+                            }
+                            accessibilityValue={
+                              {
+                                "max": undefined,
+                                "min": undefined,
+                                "now": undefined,
+                                "text": undefined,
+                              }
+                            }
+                            accessible={true}
+                            collapsable={false}
+                            focusable={true}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onResponderGrant={[Function]}
+                            onResponderMove={[Function]}
+                            onResponderRelease={[Function]}
+                            onResponderTerminate={[Function]}
+                            onResponderTerminationRequest={[Function]}
+                            onStartShouldSetResponder={[Function]}
+                            style={
+                              [
+                                {
+                                  "overflow": "hidden",
+                                },
+                                {
+                                  "borderBottomRightRadius": 0,
+                                  "borderRadius": 20,
+                                  "borderRightWidth": 0,
+                                  "borderTopRightRadius": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "center",
+                                    "paddingHorizontal": 16,
+                                    "paddingVertical": 9,
+                                  },
+                                  {
+                                    "paddingVertical": 5,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                collapsable={false}
+                                style={
+                                  {
+                                    "marginRight": 5,
+                                    "transform": [
+                                      {
+                                        "scale": 1,
+                                      },
+                                    ],
+                                  }
+                                }
+                                testID="undefined-icon"
+                              >
+                                <Text
+                                  accessibilityElementsHidden={true}
+                                  allowFontScaling={false}
+                                  importantForAccessibility="no-hide-descendants"
+                                  pointerEvents="none"
+                                  selectable={false}
+                                  style={
+                                    [
+                                      {
+                                        "color": "#3c3c3c",
+                                        "fontSize": 18,
+                                      },
+                                      [
+                                        {
+                                          "lineHeight": 18,
+                                          "transform": [
+                                            {
+                                              "scaleX": 1,
+                                            },
+                                          ],
+                                        },
+                                        {
+                                          "backgroundColor": "transparent",
+                                        },
+                                      ],
+                                      {
+                                        "fontFamily": "Material Design Icons",
+                                        "fontStyle": "normal",
+                                        "fontWeight": "normal",
+                                      },
+                                      {},
+                                    ]
+                                  }
+                                >
+                                  󰄜
+                                </Text>
+                              </View>
+                              <Text
+                                numberOfLines={1}
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      [
+                                        {
+                                          "textAlign": "center",
+                                        },
+                                        {
+                                          "color": "#3c3c3c",
+                                          "fontFamily": "System",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "letterSpacing": 0.1,
+                                          "lineHeight": 20,
+                                        },
+                                        undefined,
+                                      ],
+                                    ],
+                                  ]
+                                }
+                                testID="undefined-label"
+                              >
+                                Phone
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            [
+                              {
+                                "backgroundColor": "transparent",
+                                "borderBottomLeftRadius": 0,
+                                "borderColor": "rgba(121, 116, 126, 1)",
+                                "borderRadius": 20,
+                                "borderTopLeftRadius": 0,
+                                "borderWidth": 1,
+                              },
+                              {
+                                "borderStyle": "solid",
+                                "flex": 1,
+                                "minWidth": 76,
+                              },
+                              [
+                                undefined,
+                                {},
+                              ],
+                            ]
+                          }
+                        >
+                          <View
+                            accessibilityRole="button"
+                            accessibilityState={
+                              {
+                                "busy": undefined,
+                                "checked": false,
+                                "disabled": false,
+                                "expanded": undefined,
+                                "selected": undefined,
+                              }
+                            }
+                            accessibilityValue={
+                              {
+                                "max": undefined,
+                                "min": undefined,
+                                "now": undefined,
+                                "text": undefined,
+                              }
+                            }
+                            accessible={true}
+                            collapsable={false}
+                            focusable={true}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onResponderGrant={[Function]}
+                            onResponderMove={[Function]}
+                            onResponderRelease={[Function]}
+                            onResponderTerminate={[Function]}
+                            onResponderTerminationRequest={[Function]}
+                            onStartShouldSetResponder={[Function]}
+                            style={
+                              [
+                                {
+                                  "overflow": "hidden",
+                                },
+                                {
+                                  "borderBottomLeftRadius": 0,
+                                  "borderRadius": 20,
+                                  "borderTopLeftRadius": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "center",
+                                    "paddingHorizontal": 16,
+                                    "paddingVertical": 9,
+                                  },
+                                  {
+                                    "paddingVertical": 5,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                collapsable={false}
+                                style={
+                                  {
+                                    "marginRight": 5,
+                                    "transform": [
+                                      {
+                                        "scale": 1,
+                                      },
+                                    ],
+                                  }
+                                }
+                                testID="undefined-icon"
+                              >
+                                <Text
+                                  accessibilityElementsHidden={true}
+                                  allowFontScaling={false}
+                                  importantForAccessibility="no-hide-descendants"
+                                  pointerEvents="none"
+                                  selectable={false}
+                                  style={
+                                    [
+                                      {
+                                        "color": "#3c3c3c",
+                                        "fontSize": 18,
+                                      },
+                                      [
+                                        {
+                                          "lineHeight": 18,
+                                          "transform": [
+                                            {
+                                              "scaleX": 1,
+                                            },
+                                          ],
+                                        },
+                                        {
+                                          "backgroundColor": "transparent",
+                                        },
+                                      ],
+                                      {
+                                        "fontFamily": "Material Design Icons",
+                                        "fontStyle": "normal",
+                                        "fontWeight": "normal",
+                                      },
+                                      {},
+                                    ]
+                                  }
+                                >
+                                  󰇮
+                                </Text>
+                              </View>
+                              <Text
+                                numberOfLines={1}
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      [
+                                        {
+                                          "textAlign": "center",
+                                        },
+                                        {
+                                          "color": "#3c3c3c",
+                                          "fontFamily": "System",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "letterSpacing": 0.1,
+                                          "lineHeight": 20,
+                                        },
+                                        undefined,
+                                      ],
+                                    ],
+                                  ]
+                                }
+                                testID="undefined-label"
+                              >
+                                Email
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
           </RNSScreenContentWrapper>
           <RNSScreenStackHeaderConfig
@@ -7156,5 +7593,18 @@ exports[`Hotel details should navigate to first hotel 1`] = `
       </RNSScreenStack>
     </View>
   </View>
+  <View
+    collapsable={false}
+    pointerEvents="box-none"
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
 </RNCSafeAreaProvider>
 `;

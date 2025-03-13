@@ -66,7 +66,8 @@ export const Hotels: FC = memo(() => {
         <Card elevation={4}>
           <Card.Content>
             <SegmentedButtons
-              value={button}
+              // Don't set the value it looks more natural this way
+              value={''}
               onValueChange={value => setButton(value as TBottomSheet)}
               density="medium"
               buttons={[
