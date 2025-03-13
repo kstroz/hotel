@@ -6,7 +6,13 @@ import { Card, Icon, Text } from 'react-native-paper';
 import { HotelCardProps } from './HotelCard.types';
 import { hotelsCardStyles } from './HotelCard.styles';
 import Carousel from 'react-native-reanimated-carousel';
-import { CAROUSEL_WIDTH, FALLBACK_IMG } from './HotelCard.consts';
+import {
+  CAROUSEL_WIDTH,
+  FALLBACK_IMG,
+  LONDON_LAT,
+  LONDON_LON,
+} from './HotelCard.consts';
+import { calculateDistance } from '@theme/Math';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
@@ -45,8 +51,16 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
       <Card.Title
         title={hotel.name}
         titleVariant="titleMedium"
-        subtitle={`${hotel.location.address}, ${hotel.location.city}`}
+        subtitle={`${hotel.location.address} | ${parseFloat(
+          calculateDistance({
+            lat1: hotel.location.latitude,
+            lon1: hotel.location.longitude,
+            lat2: LONDON_LAT,
+            lon2: LONDON_LON,
+          }).toFixed(2),
+        )}km from ${hotel.location.city}`}
         subtitleVariant="labelMedium"
+        subtitleNumberOfLines={2}
       />
       <Card.Content>
         <View style={hotelsCardStyles.ratingsWrapper}>
