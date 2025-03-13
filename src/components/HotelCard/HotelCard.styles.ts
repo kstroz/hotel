@@ -1,28 +1,15 @@
 import { COLORS } from '@theme/Colors';
 import { StyleSheet } from 'react-native';
 
-const IMAGE_HEIGHT = 150;
+const IMAGE_HEIGHT = 300;
 
 export const hotelsCardStyles = StyleSheet.create({
   imageWrapper: {
-    padding: 10,
-  },
-  pagination: {
-    gap: 5,
-    position: 'absolute',
-    top: IMAGE_HEIGHT - 10,
-  },
-  dot: {
-    backgroundColor: COLORS.Gray,
-    borderRadius: 50,
-  },
-  activeDot: {
-    backgroundColor: COLORS.Primary,
-    borderRadius: 50,
+    paddingTop: 5,
   },
   cardImage: {
     height: IMAGE_HEIGHT,
-    resizeMode: 'stretch',
+    borderRadius: 10,
   },
   ratingsWrapper: {
     flexDirection: 'row',

@@ -581,7 +581,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -1136,7 +1136,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -1691,7 +1691,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -2246,7 +2246,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -2801,7 +2801,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -3356,7 +3356,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -3911,7 +3911,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -4466,7 +4466,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -5021,7 +5021,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -5576,7 +5576,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             }
                             style={
                               {
-                                "padding": 10,
+                                "paddingTop": 5,
                               }
                             }
                             total={3}
@@ -6217,7 +6217,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       }
                       style={
                         {
-                          "padding": 10,
+                          "paddingTop": 5,
                         }
                       }
                       total={3}
