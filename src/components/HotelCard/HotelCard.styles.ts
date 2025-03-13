@@ -1,13 +1,15 @@
 import { COLORS } from '@theme/Colors';
 import { StyleSheet } from 'react-native';
 
+const IMAGE_HEIGHT = 300;
+
 export const hotelsCardStyles = StyleSheet.create({
   imageWrapper: {
-    padding: 10,
+    paddingTop: 5,
   },
   cardImage: {
-    height: 150,
-    resizeMode: 'stretch',
+    height: IMAGE_HEIGHT,
+    borderRadius: 10,
   },
   ratingsWrapper: {
     flexDirection: 'row',
