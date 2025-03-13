@@ -1,4 +1,4 @@
-import { FC, memo, useCallback, useRef, useState } from 'react';
+import { FC, memo, useCallback, useMemo, useRef, useState } from 'react';
 import { FlatList, View } from 'react-native';
 import { hotelsStyles } from './Hotels.styles';
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
@@ -10,14 +10,15 @@ import HotelCard from '@components/HotelCard/HotelCard';
 import { Card, SegmentedButtons } from 'react-native-paper';
 import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
 import { Filter } from './Filter';
-import { Sort } from './Sort';
-import { TBottomSheet } from './Hotels.types';
+import Sort from './components/Sort';
+import { SortConfig, TBottomSheet } from './Hotels.types';
 
 export const Hotels: FC = memo(() => {
   const bottomSheetRef = useRef<BottomSheet>(null);
   const nav = useHomeNavigation();
   const [button, setButton] = useState<TBottomSheet>('');
   const { hotels, areHotelsLoading } = useHotels();
+  const [sortConfig, setSortConfig] = useState<SortConfig>();
 
   useFocusEffect(
     useCallback(() => {
@@ -26,6 +27,33 @@ export const Hotels: FC = memo(() => {
       });
     }, [areHotelsLoading, nav]),
   );
+
+  const sortedHotels = useMemo(() => {
+    if (!sortConfig) {
+      return hotels;
+    }
+
+    return [...hotels].sort((a, b) => {
+      let result = 0;
+
+      switch (sortConfig.sortBy) {
+        case 'price': {
+          result = a.price - b.price;
+          break;
+        }
+        case 'stars': {
+          result = a.stars - b.stars;
+          break;
+        }
+        case 'userRating': {
+          result = a.userRating - b.userRating;
+          break;
+        }
+      }
+
+      return sortConfig.order === 'asc' ? result : -result;
+    });
+  }, [hotels, sortConfig]);
 
   if (areHotelsLoading) {
     return <Loader type="fullscreen" />;
@@ -59,7 +87,7 @@ export const Hotels: FC = memo(() => {
         </Card>
       </View>
       <FlatList
-        data={hotels}
+        data={sortedHotels}
         keyExtractor={hotel => hotel.id.toString()}
         contentContainerStyle={hotelsStyles.listContent}
         renderItem={({ item }) => (
@@ -82,7 +110,7 @@ export const Hotels: FC = memo(() => {
         {button === 'filter' ? (
           <Filter />
         ) : button === 'sort' ? (
-          <Sort />
+          <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
         ) : (
           <></>
         )}
