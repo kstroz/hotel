@@ -6,13 +6,6 @@ import { COLORS } from '@theme/Colors';
 import { SortProps } from './Sort.types';
 import { SORT_OPTIONS } from './Sort.consts';
 
-const renderRightIcon = (isValid: boolean) => (
-  <List.Icon
-    icon="check"
-    color={isValid ? COLORS.Primary : COLORS.Transparent}
-  />
-);
-
 export const Sort: FC<SortProps> = ({ sortConfig, onSortChange }) => (
   <BottomSheetView style={bottomSheetStyles.root}>
     {SORT_OPTIONS.map(({ label, config: { order, sortBy } }) => (
@@ -22,18 +15,23 @@ export const Sort: FC<SortProps> = ({ sortConfig, onSortChange }) => (
         onPress={() => {
           onSortChange({ order, sortBy });
         }}
-        right={() =>
-          renderRightIcon(
-            sortConfig?.order === order && sortConfig?.sortBy === sortBy,
-          )
-        }
+        right={() => (
+          <List.Icon
+            icon="check"
+            color={
+              sortConfig?.order === order && sortConfig?.sortBy === sortBy
+                ? COLORS.Primary
+                : COLORS.Transparent
+            }
+          />
+        )}
       />
     ))}
     <Button
       onPress={() => onSortChange(undefined)}
       disabled={!sortConfig}
       mode="text">
-      Reset sorting
+      Reset
     </Button>
   </BottomSheetView>
 );

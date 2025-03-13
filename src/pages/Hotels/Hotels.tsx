@@ -7,11 +7,12 @@ import { useHotels } from '@api/hooks';
 import { useFocusEffect } from '@react-navigation/native';
 import { Loader } from '@components/Loader';
 import HotelCard from '@components/HotelCard/HotelCard';
-import { Card, SegmentedButtons } from 'react-native-paper';
+import { Card, Icon, SegmentedButtons } from 'react-native-paper';
 import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
 import { Filter } from './Filter';
 import Sort from './components/Sort';
 import { SortConfig, TBottomSheet } from './Hotels.types';
+import { COLORS } from '@theme/Colors';
 
 export const Hotels: FC = memo(() => {
   const bottomSheetRef = useRef<BottomSheet>(null);
@@ -70,13 +71,22 @@ export const Hotels: FC = memo(() => {
               density="medium"
               buttons={[
                 {
-                  icon: 'sort',
+                  icon: props => (
+                    <Icon
+                      {...props}
+                      color={sortConfig ? COLORS.Primary : undefined}
+                      source={'sort'}
+                    />
+                  ),
+                  labelStyle: {
+                    color: sortConfig ? COLORS.Primary : undefined,
+                  },
                   value: 'sort',
                   label: 'Sort',
                   onPress: () => bottomSheetRef.current?.expand(),
                 },
                 {
-                  icon: 'filter',
+                  icon: props => <Icon {...props} source={'filter'} />,
                   value: 'filter',
                   label: 'Filter',
                   onPress: () => bottomSheetRef.current?.expand(),
