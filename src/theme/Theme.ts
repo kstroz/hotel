@@ -18,11 +18,8 @@ export const CustomTheme: MD3Theme = {
     primary: COLORS.Primary,
 
     // Segmented buttons
-    // checked state
-    secondaryContainer: '#f7bedc',
-    onSecondaryContainer: COLORS.DarkGray, // text
-
-    // unchecked
-    onSurface: COLORS.DarkGray, // text
+    // Labels
+    onSecondaryContainer: COLORS.DarkGray, // checked
+    onSurface: COLORS.DarkGray, // unchecked
   },
 };
