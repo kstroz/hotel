@@ -11,6 +11,7 @@
     "snap": "jest -u"
   },
   "dependencies": {
+    "@gorhom/bottom-sheet": "^5.1.2",
     "@react-navigation/native": "^7.0.15",
     "@react-navigation/native-stack": "^7.2.1",
     "@tanstack/react-query": "^5.67.2",
