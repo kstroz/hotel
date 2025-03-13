@@ -1,10 +1,9 @@
 import { MD3LightTheme as DefaultTheme, MD3Theme } from 'react-native-paper';
 import { COLORS } from './Colors';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export const CustomTheme: MD3Theme = {
   ...DefaultTheme,
-  roundness: 2,
+  roundness: 4,
   colors: {
     ...DefaultTheme.colors,
     elevation: {
@@ -16,6 +15,14 @@ export const CustomTheme: MD3Theme = {
       level4: COLORS.White,
       level5: COLORS.White,
     },
-    primary: Colors.Primary,
+    primary: COLORS.Primary,
+
+    // Segmented buttons
+    // checked state
+    secondaryContainer: '#f7bedc',
+    onSecondaryContainer: COLORS.DarkGray, // text
+
+    // unchecked
+    onSurface: COLORS.DarkGray, // text
   },
 };

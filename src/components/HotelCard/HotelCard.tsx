@@ -12,14 +12,15 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
 
   return (
-    <Card testID={testID} onPress={onPress}>
+    <Card testID={testID} onPress={onPress} elevation={4}>
       <View style={hotelsCardStyles.imageWrapper}>
         <Carousel
+          windowSize={2}
           width={CAROUSEL_WIDTH}
+          enabled={images.length > 1}
           height={hotelsCardStyles.cardImage.height}
           data={images}
           loop={false}
-          pagingEnabled
           mode="parallax"
           modeConfig={{
             parallaxAdjacentItemScale: 0.5,
