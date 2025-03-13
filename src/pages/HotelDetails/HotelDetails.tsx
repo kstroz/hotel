@@ -5,13 +5,15 @@ import { useFocusEffect } from '@react-navigation/native';
 import { useCallback, useState } from 'react';
 import {
   Card,
-  Icon,
   Portal,
   SegmentedButtons,
   Snackbar,
+  Text,
 } from 'react-native-paper';
 import { hotelDetailsStyles } from './HotelDetails.styles';
 import Clipboard from '@react-native-clipboard/clipboard';
+import { View } from 'react-native';
+import VerticalDivider from '@components/VerticalDivider';
 
 export const HotelDetails = () => {
   const nav = useHomeNavigation();
@@ -20,6 +22,8 @@ export const HotelDetails = () => {
   const {
     name,
     contact: { phoneNumber, email },
+    checkIn,
+    checkOut,
   } = hotel!;
 
   const [visible, setVisible] = useState(false);
@@ -35,6 +39,19 @@ export const HotelDetails = () => {
   return (
     <PageWrapper style={hotelDetailsStyles.root}>
       <HotelCard hotel={hotel!} />
+      <Card elevation={4}>
+        <Card.Content style={hotelDetailsStyles.checkWrapper}>
+          <View style={hotelDetailsStyles.labels}>
+            <Text variant="titleMedium">Check-in</Text>
+            <Text variant="labelMedium">{`${checkIn.from} - ${checkIn.to}`}</Text>
+          </View>
+          <VerticalDivider />
+          <View style={hotelDetailsStyles.labels}>
+            <Text variant="titleMedium">Check-out</Text>
+            <Text variant="labelMedium">{`${checkOut.from} - ${checkOut.to}`}</Text>
+          </View>
+        </Card.Content>
+      </Card>
       <Card elevation={4}>
         <Card.Content>
           <SegmentedButtons

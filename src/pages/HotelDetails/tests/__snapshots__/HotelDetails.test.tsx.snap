@@ -1094,7 +1094,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Park Plaza London Waterloo
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -1124,7 +1124,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                6 Hercules Road 1.31km from London
+                                6 Hercules Road | 1.31km from London
                               </Text>
                             </View>
                             <View />
@@ -1649,7 +1649,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Belgrave House Hotel
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -1679,7 +1679,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                28-32 Belgrave Road Victoria 2.59km from London
+                                28-32 Belgrave Road Victoria | 2.59km from London
                               </Text>
                             </View>
                             <View />
@@ -2204,7 +2204,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Crowne Plaza LONDON - KINGS CROSS
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -2234,7 +2234,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                1 Kings Cross Road 1.88km from London
+                                1 Kings Cross Road | 1.88km from London
                               </Text>
                             </View>
                             <View />
@@ -2759,7 +2759,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Dreamtel London Kensington
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -2789,7 +2789,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                32-36 Hogarth Road Earl's Court 5.43km from London
+                                32-36 Hogarth Road Earl's Court | 5.43km from London
                               </Text>
                             </View>
                             <View />
@@ -3314,7 +3314,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 The Z Hotel Shoreditch
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -3344,7 +3344,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                136-144 City Road 2.78km from London
+                                136-144 City Road | 2.78km from London
                               </Text>
                             </View>
                             <View />
@@ -3869,7 +3869,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Absolute Pleasure Yacht
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -3899,7 +3899,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                Behind Hertsmere Rd West India Quay 6.67km from London
+                                Behind Hertsmere Rd West India Quay | 6.67km from London
                               </Text>
                             </View>
                             <View />
@@ -4424,7 +4424,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 The Z Hotel Piccadilly
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -4454,7 +4454,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                2 Orange Street 0.93km from London
+                                2 Orange Street | 0.93km from London
                               </Text>
                             </View>
                             <View />
@@ -4979,7 +4979,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Seraphine Kensington Olympia
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -5009,7 +5009,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                225 Kensington High Street 5.61km from London
+                                225 Kensington High Street | 5.61km from London
                               </Text>
                             </View>
                             <View />
@@ -5534,7 +5534,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Mercure London Bridge
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -5564,7 +5564,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                71-79 Southwark Street 1.41km from London
+                                71-79 Southwark Street | 1.41km from London
                               </Text>
                             </View>
                             <View />
@@ -6089,7 +6089,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 Holiday Inn Express
                               </Text>
                               <Text
-                                numberOfLines={1}
+                                numberOfLines={2}
                                 style={
                                   [
                                     {
@@ -6119,7 +6119,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   ]
                                 }
                               >
-                                87 South Lambeth Road 3.26km from London
+                                87 South Lambeth Road | 3.26km from London
                               </Text>
                             </View>
                             <View />
@@ -6733,7 +6733,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                           Park Plaza London Waterloo
                         </Text>
                         <Text
-                          numberOfLines={1}
+                          numberOfLines={2}
                           style={
                             [
                               {
@@ -6763,7 +6763,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             ]
                           }
                         >
-                          6 Hercules Road 1.31km from London
+                          6 Hercules Road | 1.31km from London
                         </Text>
                       </View>
                       <View />
@@ -7117,6 +7117,199 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                           }
                         >
                           120
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "backgroundColor": "rgba(255, 255, 255, 1)",
+                    "borderRadius": 12,
+                    "shadowColor": "#000",
+                    "shadowOffset": {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.15,
+                    "shadowRadius": 10,
+                  }
+                }
+                testID="card-container-outer-layer"
+              >
+                <View
+                  collapsable={false}
+                  style={
+                    {
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "borderRadius": 12,
+                      "elevation": 4,
+                      "flex": undefined,
+                      "shadowColor": "#000",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.3,
+                      "shadowRadius": 3,
+                    }
+                  }
+                  testID="card-container"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexShrink": 1,
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="card"
+                  >
+                    <View
+                      borderRadiusStyles={{}}
+                      style={
+                        [
+                          {
+                            "paddingHorizontal": 16,
+                          },
+                          {
+                            "paddingVertical": 16,
+                          },
+                          {
+                            "flexDirection": "row",
+                            "justifyContent": "space-around",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "#3c3c3c",
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.15,
+                                  "lineHeight": 24,
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Check-in
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "#3c3c3c",
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontFamily": "System",
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5,
+                                  "lineHeight": 16,
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          14:00 - 20:00
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          {
+                            "backgroundColor": "#8c8c92",
+                            "height": "100%",
+                            "width": 1,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "#3c3c3c",
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.15,
+                                  "lineHeight": 24,
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Check-out
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "#3c3c3c",
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontFamily": "System",
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5,
+                                  "lineHeight": 16,
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          07:00 - 10:00
                         </Text>
                       </View>
                     </View>
