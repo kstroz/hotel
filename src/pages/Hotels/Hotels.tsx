@@ -16,6 +16,7 @@ import { Filter } from './Filter';
 import Sort from './components/Sort';
 import { SortConfig, TBottomSheet } from './Hotels.types';
 import { COLORS } from '@theme/Colors';
+import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
 
 export const Hotels: FC = memo(() => {
   const bottomSheetRef = useRef<BottomSheet>(null);
@@ -30,6 +31,31 @@ export const Hotels: FC = memo(() => {
         headerShown: !areHotelsLoading,
       });
     }, [areHotelsLoading, nav]),
+  );
+
+  const buttons = useMemo(
+    () => [
+      {
+        icon: (props => (
+          <Icon
+            {...props}
+            color={sortConfig ? COLORS.Primary : undefined}
+            source={'sort'}
+          />
+        )) as IconSource,
+        labelStyle: { color: sortConfig ? COLORS.Primary : undefined },
+        value: 'sort',
+        label: 'Sort',
+        onPress: () => bottomSheetRef.current?.expand(),
+      },
+      {
+        icon: (props => <Icon {...props} source={'filter'} />) as IconSource,
+        value: 'filter',
+        label: 'Filter',
+        onPress: () => bottomSheetRef.current?.expand(),
+      },
+    ],
+    [sortConfig],
   );
 
   const sortedHotels = useMemo(() => {
@@ -73,29 +99,7 @@ export const Hotels: FC = memo(() => {
               value={''}
               onValueChange={value => setButton(value as TBottomSheet)}
               density="medium"
-              buttons={[
-                {
-                  icon: props => (
-                    <Icon
-                      {...props}
-                      color={sortConfig ? COLORS.Primary : undefined}
-                      source={'sort'}
-                    />
-                  ),
-                  labelStyle: {
-                    color: sortConfig ? COLORS.Primary : undefined,
-                  },
-                  value: 'sort',
-                  label: 'Sort',
-                  onPress: () => bottomSheetRef.current?.expand(),
-                },
-                {
-                  icon: props => <Icon {...props} source={'filter'} />,
-                  value: 'filter',
-                  label: 'Filter',
-                  onPress: () => bottomSheetRef.current?.expand(),
-                },
-              ]}
+              buttons={buttons}
             />
           </Card.Content>
         </Card>
