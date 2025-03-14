@@ -18,7 +18,7 @@ import { COLORS } from '@theme/Colors';
 import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
 import Filter from './components/Filter';
 import { FiltersConfig } from './components/Filter/Filter.types';
-import { STAR_FILTER_INIT } from './Hotels.consts';
+import { PRICE_FILTER_INIT, STAR_FILTER_INIT } from './Hotels.consts';
 
 export const Hotels: FC = memo(() => {
   const sortRef = useRef<BottomSheet>(null);
@@ -28,14 +28,37 @@ export const Hotels: FC = memo(() => {
   const [sortConfig, setSortConfig] = useState<SortConfig>();
   const [filters, setFilters] = useState<FiltersConfig>({
     stars: STAR_FILTER_INIT,
+    price: PRICE_FILTER_INIT,
   });
 
-  const isStarFilter = filters.stars.includes(true);
-  const areFilters = isStarFilter;
+  const isStarFilter = useMemo(
+    () => filters.stars.includes(true),
+    [filters.stars],
+  );
+  const isPriceFilter =
+    filters.price[0] !== PRICE_FILTER_INIT[0] ||
+    filters.price[1] !== PRICE_FILTER_INIT[1];
+
+  const areFilters = isStarFilter || isPriceFilter;
 
   const { hotels, areHotelsLoading } = useHotels({
-    filterFnc: data =>
-      isStarFilter ? data.filter(val => filters?.stars[val.stars - 1]) : data,
+    filterFnc: data => {
+      let filteredData = data;
+
+      if (isStarFilter) {
+        filteredData = filteredData.filter(
+          val => filters?.stars[val.stars - 1],
+        );
+      }
+
+      if (isPriceFilter) {
+        filteredData = filteredData.filter(
+          val => val.price >= filters.price[0] && val.price <= filters.price[1],
+        );
+      }
+
+      return filteredData;
+    },
   });
 
   useFocusEffect(
@@ -141,7 +164,7 @@ export const Hotels: FC = memo(() => {
       <BottomSheet
         ref={filtersRef}
         index={-1}
-        snapPoints={['80%']}
+        snapPoints={['60%']}
         enablePanDownToClose={true}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>

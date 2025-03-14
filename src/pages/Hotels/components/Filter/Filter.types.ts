@@ -5,4 +5,5 @@ export interface FilterProps {
 
 export interface FiltersConfig {
   stars: Array<boolean>;
+  price: Array<number>;
 }
