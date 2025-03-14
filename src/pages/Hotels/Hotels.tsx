@@ -13,7 +13,7 @@ import BottomSheet, {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
 import Sort from './components/Sort';
-import { SortConfig, TBottomSheet } from './Hotels.types';
+import { SortConfig } from './Hotels.types';
 import { COLORS } from '@theme/Colors';
 import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
 import Filter from './components/Filter';
@@ -24,7 +24,6 @@ export const Hotels: FC = memo(() => {
   const sortRef = useRef<BottomSheet>(null);
   const filtersRef = useRef<BottomSheet>(null);
   const nav = useHomeNavigation();
-  const [button, setButton] = useState<TBottomSheet>('');
 
   const [sortConfig, setSortConfig] = useState<SortConfig>();
   const [filters, setFilters] = useState<FiltersConfig>({
@@ -118,7 +117,7 @@ export const Hotels: FC = memo(() => {
             <SegmentedButtons
               // Don't set the value it looks more natural this way
               value={''}
-              onValueChange={value => setButton(value as TBottomSheet)}
+              onValueChange={() => undefined}
               density="medium"
               buttons={buttons}
             />
@@ -144,7 +143,6 @@ export const Hotels: FC = memo(() => {
         index={-1}
         snapPoints={['80%']}
         enablePanDownToClose={true}
-        onClose={() => setButton('')}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>
           <Filter
@@ -161,7 +159,6 @@ export const Hotels: FC = memo(() => {
         index={-1}
         snapPoints={['50%']}
         enablePanDownToClose={true}
-        onClose={() => setButton('')}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>
           <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
