@@ -17,10 +17,15 @@ const fetchHotels = async (): Promise<Array<Hotel>> => {
   return response.data;
 };
 
-export const useHotels = () => {
+export const useHotels = ({
+  filterFnc,
+}: {
+  filterFnc?: (data: Array<Hotel>) => Array<Hotel>;
+}) => {
   const { data, isFetching } = useQuery({
     queryKey: ['hotels'],
     queryFn: fetchHotels,
+    select: filterFnc,
   });
 
   return {

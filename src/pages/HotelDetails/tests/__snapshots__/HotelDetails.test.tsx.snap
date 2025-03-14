@@ -542,7 +542,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                           "letterSpacing": 0.1,
                                           "lineHeight": 20,
                                         },
-                                        undefined,
+                                        {
+                                          "color": undefined,
+                                        },
                                       ],
                                     ],
                                   ]

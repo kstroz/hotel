@@ -12,18 +12,32 @@ import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
-import { Filter } from './Filter';
 import Sort from './components/Sort';
 import { SortConfig, TBottomSheet } from './Hotels.types';
 import { COLORS } from '@theme/Colors';
 import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
+import Filter from './components/Filter';
+import { FiltersConfig } from './components/Filter/Filter.types';
+import { STAR_FILTER_INIT } from './Hotels.consts';
 
 export const Hotels: FC = memo(() => {
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  const sortRef = useRef<BottomSheet>(null);
+  const filtersRef = useRef<BottomSheet>(null);
   const nav = useHomeNavigation();
   const [button, setButton] = useState<TBottomSheet>('');
-  const { hotels, areHotelsLoading } = useHotels();
+
   const [sortConfig, setSortConfig] = useState<SortConfig>();
+  const [filters, setFilters] = useState<FiltersConfig>({
+    stars: STAR_FILTER_INIT,
+  });
+
+  const isStarFilter = filters.stars.includes(true);
+  const areFilters = isStarFilter;
+
+  const { hotels, areHotelsLoading } = useHotels({
+    filterFnc: data =>
+      isStarFilter ? data.filter(val => filters?.stars[val.stars - 1]) : data,
+  });
 
   useFocusEffect(
     useCallback(() => {
@@ -46,16 +60,23 @@ export const Hotels: FC = memo(() => {
         labelStyle: { color: sortConfig ? COLORS.Primary : undefined },
         value: 'sort',
         label: 'Sort',
-        onPress: () => bottomSheetRef.current?.expand(),
+        onPress: () => sortRef.current?.expand(),
       },
       {
-        icon: (props => <Icon {...props} source={'filter'} />) as IconSource,
+        icon: (props => (
+          <Icon
+            {...props}
+            color={areFilters ? COLORS.Primary : undefined}
+            source={'filter'}
+          />
+        )) as IconSource,
+        labelStyle: { color: areFilters ? COLORS.Primary : undefined },
         value: 'filter',
         label: 'Filter',
-        onPress: () => bottomSheetRef.current?.expand(),
+        onPress: () => filtersRef.current?.expand(),
       },
     ],
-    [sortConfig],
+    [sortConfig, areFilters],
   );
 
   const sortedHotels = useMemo(() => {
@@ -119,20 +140,31 @@ export const Hotels: FC = memo(() => {
         )}
       />
       <BottomSheet
-        ref={bottomSheetRef}
+        ref={filtersRef}
+        index={-1}
+        snapPoints={['80%']}
+        enablePanDownToClose={true}
+        onClose={() => setButton('')}
+        backdropComponent={BottomSheetBackdrop}>
+        <BottomSheetView style={bottomSheetStyles.root}>
+          <Filter
+            onFiltersChange={newFilters => {
+              setFilters(newFilters);
+              filtersRef.current?.close();
+            }}
+            filters={filters}
+          />
+        </BottomSheetView>
+      </BottomSheet>
+      <BottomSheet
+        ref={sortRef}
         index={-1}
         snapPoints={['50%']}
         enablePanDownToClose={true}
         onClose={() => setButton('')}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>
-          {button === 'filter' ? (
-            <Filter />
-          ) : button === 'sort' ? (
-            <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
-          ) : (
-            <Loader />
-          )}
+          <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
         </BottomSheetView>
       </BottomSheet>
     </>

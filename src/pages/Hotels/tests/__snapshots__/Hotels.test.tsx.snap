@@ -542,7 +542,9 @@ exports[`Hotels should check list of hotels 1`] = `
                                           "letterSpacing": 0.1,
                                           "lineHeight": 20,
                                         },
-                                        undefined,
+                                        {
+                                          "color": undefined,
+                                        },
                                       ],
                                     ],
                                   ]
