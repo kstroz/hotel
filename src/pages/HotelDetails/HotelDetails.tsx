@@ -57,7 +57,7 @@ export const HotelDetails = () => {
           <SegmentedButtons
             // Don't set the value it looks more natural this way
             value={''}
-            onValueChange={() => void 0}
+            onValueChange={() => undefined}
             density="medium"
             buttons={[
               {

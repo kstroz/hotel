@@ -15,7 +15,5 @@ export const bottomSheetStyles = StyleSheet.create({
   root: {
     ...pageWrapperStyles.root,
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
