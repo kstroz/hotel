@@ -1,6 +1,6 @@
 import { FC, memo, useCallback, useMemo, useRef, useState } from 'react';
 import { FlatList, View } from 'react-native';
-import { hotelsStyles } from './Hotels.styles';
+import { bottomSheetStyles, hotelsStyles } from './Hotels.styles';
 import { HomeStackScreenTitles } from '@navigation/HomeStack';
 import { useHomeNavigation } from '@navigation/hooks';
 import { useHotels } from '@api/hooks';
@@ -8,7 +8,10 @@ import { useFocusEffect } from '@react-navigation/native';
 import { Loader } from '@components/Loader';
 import HotelCard from '@components/HotelCard/HotelCard';
 import { Card, Icon, SegmentedButtons } from 'react-native-paper';
-import BottomSheet, { BottomSheetBackdrop } from '@gorhom/bottom-sheet';
+import BottomSheet, {
+  BottomSheetBackdrop,
+  BottomSheetView,
+} from '@gorhom/bottom-sheet';
 import { Filter } from './Filter';
 import Sort from './components/Sort';
 import { SortConfig, TBottomSheet } from './Hotels.types';
@@ -118,13 +121,15 @@ export const Hotels: FC = memo(() => {
         enablePanDownToClose={true}
         onClose={() => setButton('')}
         backdropComponent={BottomSheetBackdrop}>
-        {button === 'filter' ? (
-          <Filter />
-        ) : button === 'sort' ? (
-          <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
-        ) : (
-          <></>
-        )}
+        <BottomSheetView style={bottomSheetStyles.root}>
+          {button === 'filter' ? (
+            <Filter />
+          ) : button === 'sort' ? (
+            <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
+          ) : (
+            <Loader />
+          )}
+        </BottomSheetView>
       </BottomSheet>
     </>
   );
