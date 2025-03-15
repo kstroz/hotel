@@ -7,7 +7,7 @@ import { useHotels } from '@api/hooks';
 import { useFocusEffect } from '@react-navigation/native';
 import { Loader } from '@components/Loader';
 import HotelCard from '@components/HotelCard/HotelCard';
-import { Card, Icon, SegmentedButtons } from 'react-native-paper';
+import { Card, Icon, SegmentedButtons, Text } from 'react-native-paper';
 import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetView,
@@ -171,20 +171,32 @@ export const Hotels: FC = memo(() => {
           </Card.Content>
         </Card>
       </View>
-      <FlatList
-        data={sortedHotels}
-        keyExtractor={hotel => hotel.id.toString()}
-        contentContainerStyle={hotelsStyles.listContent}
-        renderItem={({ item }) => (
-          <HotelCard
-            hotel={item}
-            onPress={() =>
-              nav.navigate(HomeStackScreenTitles.HotelDetails, { hotel: item })
-            }
-            testID={`hotel-${item.id}`}
-          />
-        )}
-      />
+      {sortedHotels.length ? (
+        <FlatList
+          data={sortedHotels}
+          keyExtractor={hotel => hotel.id.toString()}
+          contentContainerStyle={hotelsStyles.listContent}
+          renderItem={({ item }) => (
+            <HotelCard
+              hotel={item}
+              onPress={() =>
+                nav.navigate(HomeStackScreenTitles.HotelDetails, {
+                  hotel: item,
+                })
+              }
+              testID={`hotel-${item.id}`}
+            />
+          )}
+        />
+      ) : (
+        <View style={hotelsStyles.emptyWrapper}>
+          <Text variant="headlineMedium" style={hotelsStyles.emptyLabel}>
+            We couldn't find anything that matches your search.
+          </Text>
+          <Icon source={'emoticon-sad'} size={68} color={COLORS.Gray} />
+        </View>
+      )}
+
       <BottomSheet
         ref={filtersRef}
         index={-1}
