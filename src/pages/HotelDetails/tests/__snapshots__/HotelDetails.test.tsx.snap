@@ -262,6 +262,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 },
                               ]
                             }
+                            testID="sort"
                           >
                             <View
                               style={
@@ -291,7 +292,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ],
                                   }
                                 }
-                                testID="undefined-icon"
+                                testID="sort-icon"
                               >
                                 <Text
                                   accessibilityElementsHidden={true}
@@ -369,7 +370,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ],
                                   ]
                                 }
-                                testID="undefined-label"
+                                testID="sort-label"
                               >
                                 Sort
                               </Text>
@@ -442,6 +443,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                 },
                               ]
                             }
+                            testID="filter"
                           >
                             <View
                               style={
@@ -471,7 +473,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ],
                                   }
                                 }
-                                testID="undefined-icon"
+                                testID="filter-icon"
                               >
                                 <Text
                                   accessibilityElementsHidden={true}
@@ -549,7 +551,7 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ],
                                   ]
                                 }
-                                testID="undefined-label"
+                                testID="filter-label"
                               >
                                 Filter
                               </Text>

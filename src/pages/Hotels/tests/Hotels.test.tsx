@@ -1,11 +1,12 @@
 import React from 'react';
-import { screen } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 import { RootNavigation } from '@navigation/RootNavigation';
 import { renderWithProviders, setupAxios } from '@tests/tests.helpers';
 
 import { mockHotels } from '@tests/hotelMocks';
 import { API_URLS } from '@api/api.consts';
 import { HttpStatusCode } from 'axios';
+import { SORT_OPTIONS } from '../components/Sort/Sort.consts';
 
 describe('Hotels', () => {
   const axios = setupAxios();
@@ -21,6 +22,11 @@ describe('Hotels', () => {
       ).toBeTruthy();
     }
 
-    expect(screen).toMatchSnapshot();
+    fireEvent.press(await screen.findByTestId(`sort`));
+
+    for (let i = 0; i < SORT_OPTIONS.length; i++) {
+      const { sortBy, order } = SORT_OPTIONS[i].config;
+      expect(await screen.findByTestId(`${sortBy}-${order}`)).toBeTruthy();
+    }
   });
 });
