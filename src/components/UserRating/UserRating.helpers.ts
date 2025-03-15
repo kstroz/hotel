@@ -1,12 +1,15 @@
 import { COLORS } from '@theme/Colors';
+import { Rating } from './UserRating.types';
 
-export const getBadgeColor = (rate: number) => {
-  if (rate <= 3) {
-    return COLORS.Red;
+export const getBadgeColor = (rate: Rating) => {
+  switch (rate) {
+    case Rating.Excellent:
+      return COLORS.Primary;
+    case Rating['Very good']:
+      return COLORS.LightGreen;
+    case Rating.Good:
+      return COLORS.Gold;
+    case Rating.Okay:
+      return COLORS.Red;
   }
-  if (rate <= 7) {
-    return COLORS.Gold;
-  }
-
-  return COLORS.Primary;
 };

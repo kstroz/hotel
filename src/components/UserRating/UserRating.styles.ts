@@ -5,6 +5,6 @@ export const userRatingStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 5,
+    gap: 8,
   },
 });

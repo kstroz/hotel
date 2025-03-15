@@ -3,6 +3,8 @@ import { List, Button } from 'react-native-paper';
 import { COLORS } from '@theme/Colors';
 import { SortProps } from './Sort.types';
 import { SORT_OPTIONS } from './Sort.consts';
+import { View } from 'react-native';
+import { sortStyles } from './Sort.styles';
 
 export const Sort: FC<SortProps> = ({ sortConfig, onSortChange }) => {
   const renderIcon = useCallback(
@@ -20,21 +22,23 @@ export const Sort: FC<SortProps> = ({ sortConfig, onSortChange }) => {
   );
 
   return (
-    <>
-      {SORT_OPTIONS.map(({ label, config: { order, sortBy } }) => (
-        <List.Item
-          key={`${sortBy}-${order}`}
-          title={label}
-          onPress={() => onSortChange({ order, sortBy })}
-          right={() => renderIcon(order, sortBy)}
-        />
-      ))}
+    <View style={sortStyles.root}>
+      <View>
+        {SORT_OPTIONS.map(({ label, config: { order, sortBy } }) => (
+          <List.Item
+            key={`${sortBy}-${order}`}
+            title={label}
+            onPress={() => onSortChange({ order, sortBy })}
+            right={() => renderIcon(order, sortBy)}
+          />
+        ))}
+      </View>
       <Button
         onPress={() => onSortChange(undefined)}
         disabled={!sortConfig}
         mode="text">
         Reset
       </Button>
-    </>
+    </View>
   );
 };

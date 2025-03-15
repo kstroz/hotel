@@ -1,41 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserRating renders correctly high rating 1`] = `
+exports[`UserRating renders correctly excellent rating 1`] = `
 <View
   style={
     {
       "alignItems": "center",
       "flexDirection": "row",
-      "gap": 5,
+      "gap": 8,
       "justifyContent": "center",
     }
   }
 >
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 11,
-            "fontWeight": "500",
-            "letterSpacing": 0.5,
-            "lineHeight": 16,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    User rating:
-  </Text>
   <Text
     collapsable={false}
     numberOfLines={1}
@@ -57,22 +32,8 @@ exports[`UserRating renders correctly high rating 1`] = `
       }
     }
   >
-    9
+    8.7
   </Text>
-</View>
-`;
-
-exports[`UserRating renders correctly low rating 1`] = `
-<View
-  style={
-    {
-      "alignItems": "center",
-      "flexDirection": "row",
-      "gap": 5,
-      "justifyContent": "center",
-    }
-  }
->
   <Text
     style={
       [
@@ -96,70 +57,22 @@ exports[`UserRating renders correctly low rating 1`] = `
       ]
     }
   >
-    User rating:
-  </Text>
-  <Text
-    collapsable={false}
-    numberOfLines={1}
-    style={
-      {
-        "alignSelf": "flex-end",
-        "backgroundColor": "#FF0000",
-        "borderRadius": 10,
-        "color": "rgba(255, 255, 255, 1)",
-        "fontSize": 10,
-        "height": 20,
-        "lineHeight": 10,
-        "minWidth": 20,
-        "opacity": 1,
-        "overflow": "hidden",
-        "paddingHorizontal": 3,
-        "textAlign": "center",
-        "textAlignVertical": "center",
-      }
-    }
-  >
-    1
+    Excellent
   </Text>
 </View>
 `;
 
-exports[`UserRating renders correctly medium rating 1`] = `
+exports[`UserRating renders correctly good rating 1`] = `
 <View
   style={
     {
       "alignItems": "center",
       "flexDirection": "row",
-      "gap": 5,
+      "gap": 8,
       "justifyContent": "center",
     }
   }
 >
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 11,
-            "fontWeight": "500",
-            "letterSpacing": 0.5,
-            "lineHeight": 16,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    User rating:
-  </Text>
   <Text
     collapsable={false}
     numberOfLines={1}
@@ -181,7 +94,156 @@ exports[`UserRating renders correctly medium rating 1`] = `
       }
     }
   >
-    5
+    7.5
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "textAlign": "left",
+        },
+        {
+          "color": "rgba(28, 27, 31, 1)",
+          "writingDirection": "ltr",
+        },
+        [
+          {
+            "fontFamily": "System",
+            "fontSize": 11,
+            "fontWeight": "500",
+            "letterSpacing": 0.5,
+            "lineHeight": 16,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    Good
+  </Text>
+</View>
+`;
+
+exports[`UserRating renders correctly okay rating 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 8,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    collapsable={false}
+    numberOfLines={1}
+    style={
+      {
+        "alignSelf": "flex-end",
+        "backgroundColor": "#FF0000",
+        "borderRadius": 10,
+        "color": "rgba(255, 255, 255, 1)",
+        "fontSize": 10,
+        "height": 20,
+        "lineHeight": 10,
+        "minWidth": 20,
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 3,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    6
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "textAlign": "left",
+        },
+        {
+          "color": "rgba(28, 27, 31, 1)",
+          "writingDirection": "ltr",
+        },
+        [
+          {
+            "fontFamily": "System",
+            "fontSize": 11,
+            "fontWeight": "500",
+            "letterSpacing": 0.5,
+            "lineHeight": 16,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    Okay
+  </Text>
+</View>
+`;
+
+exports[`UserRating renders correctly very good rating 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 8,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    collapsable={false}
+    numberOfLines={1}
+    style={
+      {
+        "alignSelf": "flex-end",
+        "backgroundColor": "#88E788",
+        "borderRadius": 10,
+        "color": "rgba(255, 255, 255, 1)",
+        "fontSize": 10,
+        "height": 20,
+        "lineHeight": 10,
+        "minWidth": 20,
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 3,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    8.1
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "textAlign": "left",
+        },
+        {
+          "color": "rgba(28, 27, 31, 1)",
+          "writingDirection": "ltr",
+        },
+        [
+          {
+            "fontFamily": "System",
+            "fontSize": 11,
+            "fontWeight": "500",
+            "letterSpacing": 0.5,
+            "lineHeight": 16,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    Very good
   </Text>
 </View>
 `;

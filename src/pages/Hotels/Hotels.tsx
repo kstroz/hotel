@@ -12,18 +12,78 @@ import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
-import { Filter } from './Filter';
 import Sort from './components/Sort';
-import { SortConfig, TBottomSheet } from './Hotels.types';
+import { SortConfig } from './Hotels.types';
 import { COLORS } from '@theme/Colors';
 import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
+import Filter from './components/Filter';
+import { FiltersConfig } from './components/Filter/Filter.types';
+import {
+  PRICE_FILTER_INIT,
+  STAR_FILTER_INIT,
+  USER_RATING_FILTER_INIT,
+} from './Hotels.consts';
 
 export const Hotels: FC = memo(() => {
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  const sortRef = useRef<BottomSheet>(null);
+  const filtersRef = useRef<BottomSheet>(null);
   const nav = useHomeNavigation();
-  const [button, setButton] = useState<TBottomSheet>('');
-  const { hotels, areHotelsLoading } = useHotels();
+
   const [sortConfig, setSortConfig] = useState<SortConfig>();
+  const [filters, setFilters] = useState<FiltersConfig>({
+    price: PRICE_FILTER_INIT,
+    stars: STAR_FILTER_INIT,
+    userRating: USER_RATING_FILTER_INIT,
+  });
+
+  const isPriceFilter =
+    filters.price[0] !== PRICE_FILTER_INIT[0] ||
+    filters.price[1] !== PRICE_FILTER_INIT[1];
+
+  const isUserRatingFilter = useMemo(
+    () => filters.userRating.some(({ checked }) => checked),
+    [filters.userRating],
+  );
+
+  const isStarFilter = useMemo(
+    () => filters.stars.includes(true),
+    [filters.stars],
+  );
+
+  const areFilters = isStarFilter || isPriceFilter || isUserRatingFilter;
+
+  const { hotels, areHotelsLoading } = useHotels({
+    filterFnc: data => {
+      let filteredData = data;
+
+      if (isPriceFilter) {
+        filteredData = filteredData.filter(
+          val => val.price >= filters.price[0] && val.price <= filters.price[1],
+        );
+      }
+
+      if (isUserRatingFilter) {
+        const activeRatings = filters.userRating.filter(
+          rating => rating.checked,
+        );
+
+        filteredData = filteredData.filter(val =>
+          activeRatings.some(
+            rating =>
+              val.userRating >= rating.min && val.userRating <= rating.max,
+          ),
+        );
+      }
+
+      if (isStarFilter) {
+        filteredData = filteredData.filter(
+          val => filters?.stars[val.stars - 1],
+        );
+      }
+
+      return filteredData;
+    },
+  });
 
   useFocusEffect(
     useCallback(() => {
@@ -46,16 +106,23 @@ export const Hotels: FC = memo(() => {
         labelStyle: { color: sortConfig ? COLORS.Primary : undefined },
         value: 'sort',
         label: 'Sort',
-        onPress: () => bottomSheetRef.current?.expand(),
+        onPress: () => sortRef.current?.expand(),
       },
       {
-        icon: (props => <Icon {...props} source={'filter'} />) as IconSource,
+        icon: (props => (
+          <Icon
+            {...props}
+            color={areFilters ? COLORS.Primary : undefined}
+            source={'filter'}
+          />
+        )) as IconSource,
+        labelStyle: { color: areFilters ? COLORS.Primary : undefined },
         value: 'filter',
         label: 'Filter',
-        onPress: () => bottomSheetRef.current?.expand(),
+        onPress: () => filtersRef.current?.expand(),
       },
     ],
-    [sortConfig],
+    [sortConfig, areFilters],
   );
 
   const sortedHotels = useMemo(() => {
@@ -97,7 +164,7 @@ export const Hotels: FC = memo(() => {
             <SegmentedButtons
               // Don't set the value it looks more natural this way
               value={''}
-              onValueChange={value => setButton(value as TBottomSheet)}
+              onValueChange={() => undefined}
               density="medium"
               buttons={buttons}
             />
@@ -119,20 +186,29 @@ export const Hotels: FC = memo(() => {
         )}
       />
       <BottomSheet
-        ref={bottomSheetRef}
+        ref={filtersRef}
+        index={-1}
+        snapPoints={['100%']}
+        enablePanDownToClose={true}
+        backdropComponent={BottomSheetBackdrop}>
+        <BottomSheetView style={bottomSheetStyles.root}>
+          <Filter
+            onFiltersChange={newFilters => {
+              setFilters(newFilters);
+              filtersRef.current?.close();
+            }}
+            filters={filters}
+          />
+        </BottomSheetView>
+      </BottomSheet>
+      <BottomSheet
+        ref={sortRef}
         index={-1}
         snapPoints={['50%']}
         enablePanDownToClose={true}
-        onClose={() => setButton('')}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>
-          {button === 'filter' ? (
-            <Filter />
-          ) : button === 'sort' ? (
-            <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
-          ) : (
-            <Loader />
-          )}
+          <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
         </BottomSheetView>
       </BottomSheet>
     </>

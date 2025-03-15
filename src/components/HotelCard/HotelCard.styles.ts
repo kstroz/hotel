@@ -12,8 +12,9 @@ export const hotelsCardStyles = StyleSheet.create({
     borderRadius: 10,
   },
   ratingsWrapper: {
+    alignItems: 'center',
     flexDirection: 'row',
-    gap: 10,
+    gap: 8,
   },
   divider: {
     height: '100%',

@@ -5,5 +5,7 @@ export const COLORS = {
   White: '#ffffff',
   Gold: '#faaf00',
   Red: '#FF0000',
+  LightPink: '#fce4ec',
+  LightGreen: '#88E788',
   Transparent: 'transparent',
 };
