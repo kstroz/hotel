@@ -27,6 +27,7 @@ export const Sort: FC<SortProps> = ({ sortConfig, onSortChange }) => {
         {SORT_OPTIONS.map(({ label, config: { order, sortBy } }) => (
           <List.Item
             key={`${sortBy}-${order}`}
+            testID={`${sortBy}-${order}`}
             title={label}
             onPress={() => onSortChange({ order, sortBy })}
             right={() => renderIcon(order, sortBy)}

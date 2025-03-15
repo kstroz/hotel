@@ -6,6 +6,6 @@ module.exports = {
   ],
   setupFilesAfterEnv: ['./jestSetupAfterEnv.ts'],
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?react-native|@react-native-community|@react-native|@react-navigation)',
+    'node_modules/(?!(jest-)?react-native|@react-native-community|@react-native|@react-navigation|@miblanchard/react-native-slider)',
   ],
 };

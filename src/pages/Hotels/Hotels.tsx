@@ -96,6 +96,7 @@ export const Hotels: FC = memo(() => {
   const buttons = useMemo(
     () => [
       {
+        testID: 'sort',
         icon: (props => (
           <Icon
             {...props}
@@ -109,6 +110,7 @@ export const Hotels: FC = memo(() => {
         onPress: () => sortRef.current?.expand(),
       },
       {
+        testID: 'filter',
         icon: (props => (
           <Icon
             {...props}
@@ -220,7 +222,13 @@ export const Hotels: FC = memo(() => {
         enablePanDownToClose={true}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>
-          <Sort onSortChange={setSortConfig} sortConfig={sortConfig} />
+          <Sort
+            onSortChange={newSort => {
+              setSortConfig(newSort);
+              sortRef.current?.close();
+            }}
+            sortConfig={sortConfig}
+          />
         </BottomSheetView>
       </BottomSheet>
     </>
