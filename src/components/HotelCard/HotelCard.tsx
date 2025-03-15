@@ -14,6 +14,7 @@ import {
 } from './HotelCard.consts';
 import { calculateDistance } from '@utils/math';
 import VerticalDivider from '@components/VerticalDivider';
+import { getRatingFromScore } from './HotelCard.helpers';
 
 const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
   const [images, setImages] = useState<string[]>(hotel.gallery);
@@ -67,7 +68,8 @@ const HotelCard: FC<HotelCardProps> = ({ hotel, onPress, testID }) => {
         <View style={hotelsCardStyles.ratingsWrapper}>
           <Rating rate={hotel.stars} />
           <VerticalDivider />
-          <UserRating rate={hotel.userRating} />
+          <UserRating rate={getRatingFromScore(hotel.userRating)} />
+          <Text variant="labelSmall">score from users!</Text>
         </View>
         <View style={hotelsCardStyles.costWrapper}>
           <Icon

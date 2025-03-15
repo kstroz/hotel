@@ -18,7 +18,11 @@ import { COLORS } from '@theme/Colors';
 import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
 import Filter from './components/Filter';
 import { FiltersConfig } from './components/Filter/Filter.types';
-import { PRICE_FILTER_INIT, STAR_FILTER_INIT } from './Hotels.consts';
+import {
+  PRICE_FILTER_INIT,
+  STAR_FILTER_INIT,
+  USER_RATING_FILTER_INIT,
+} from './Hotels.consts';
 
 export const Hotels: FC = memo(() => {
   const sortRef = useRef<BottomSheet>(null);
@@ -27,33 +31,53 @@ export const Hotels: FC = memo(() => {
 
   const [sortConfig, setSortConfig] = useState<SortConfig>();
   const [filters, setFilters] = useState<FiltersConfig>({
-    stars: STAR_FILTER_INIT,
     price: PRICE_FILTER_INIT,
+    stars: STAR_FILTER_INIT,
+    userRating: USER_RATING_FILTER_INIT,
   });
+
+  const isPriceFilter =
+    filters.price[0] !== PRICE_FILTER_INIT[0] ||
+    filters.price[1] !== PRICE_FILTER_INIT[1];
+
+  const isUserRatingFilter = useMemo(
+    () => filters.userRating.some(({ checked }) => checked),
+    [filters.userRating],
+  );
 
   const isStarFilter = useMemo(
     () => filters.stars.includes(true),
     [filters.stars],
   );
-  const isPriceFilter =
-    filters.price[0] !== PRICE_FILTER_INIT[0] ||
-    filters.price[1] !== PRICE_FILTER_INIT[1];
 
-  const areFilters = isStarFilter || isPriceFilter;
+  const areFilters = isStarFilter || isPriceFilter || isUserRatingFilter;
 
   const { hotels, areHotelsLoading } = useHotels({
     filterFnc: data => {
       let filteredData = data;
 
-      if (isStarFilter) {
-        filteredData = filteredData.filter(
-          val => filters?.stars[val.stars - 1],
-        );
-      }
-
       if (isPriceFilter) {
         filteredData = filteredData.filter(
           val => val.price >= filters.price[0] && val.price <= filters.price[1],
+        );
+      }
+
+      if (isUserRatingFilter) {
+        const activeRatings = filters.userRating.filter(
+          rating => rating.checked,
+        );
+
+        filteredData = filteredData.filter(val =>
+          activeRatings.some(
+            rating =>
+              val.userRating >= rating.min && val.userRating <= rating.max,
+          ),
+        );
+      }
+
+      if (isStarFilter) {
+        filteredData = filteredData.filter(
+          val => filters?.stars[val.stars - 1],
         );
       }
 
@@ -164,7 +188,7 @@ export const Hotels: FC = memo(() => {
       <BottomSheet
         ref={filtersRef}
         index={-1}
-        snapPoints={['60%']}
+        snapPoints={['100%']}
         enablePanDownToClose={true}
         backdropComponent={BottomSheetBackdrop}>
         <BottomSheetView style={bottomSheetStyles.root}>

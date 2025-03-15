@@ -4,15 +4,17 @@ import { StyleSheet } from 'react-native';
 export const filterStyles = StyleSheet.create({
   root: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   filterTypeWrapper: {
-    flex: 1,
+    gap: 12,
+  },
+  filterInputsWrapper: {
+    paddingHorizontal: 10,
   },
   pricingLabelsWrapper: {
-    marginTop: 12,
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   label: {
@@ -22,18 +24,15 @@ export const filterStyles = StyleSheet.create({
     width: '40%',
     padding: 12,
     gap: 2,
-  },
-  sliderWrapper: {
-    marginTop: 8,
-    marginHorizontal: 12,
+    marginBottom: 12,
   },
   starsWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
   },
   buttons: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    paddingBottom: 12,
   },
 });

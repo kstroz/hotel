@@ -1148,8 +1148,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -1356,11 +1357,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#f2007d",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.7
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -1384,32 +1408,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  9.8
+                                  Excellent
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -1703,8 +1729,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -1911,11 +1938,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#faaf00",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  7.5
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -1939,32 +1989,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  7.8
+                                  Good
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -2258,8 +2310,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -2466,11 +2519,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#88E788",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.1
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -2494,32 +2570,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  8.1
+                                  Very good
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -2813,8 +2891,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -3021,11 +3100,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#FF0000",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  6
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -3049,32 +3151,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#faaf00",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  6.4
+                                  Okay
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -3368,8 +3472,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -3576,11 +3681,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#FF0000",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  6
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -3604,32 +3732,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  7.4
+                                  Okay
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -3923,8 +4053,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -4131,11 +4262,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#88E788",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.1
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -4159,32 +4313,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  8.4
+                                  Very good
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -4478,8 +4634,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -4686,11 +4843,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#88E788",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.1
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -4714,32 +4894,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  8.4
+                                  Very good
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -5033,8 +5215,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -5241,11 +5424,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#f2007d",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.7
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -5269,32 +5475,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  9.1
+                                  Excellent
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -5588,8 +5796,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -5796,11 +6005,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#f2007d",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  8.7
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -5824,32 +6056,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#f2007d",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  9.1
+                                  Excellent
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -6143,8 +6377,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             <View
                               style={
                                 {
+                                  "alignItems": "center",
                                   "flexDirection": "row",
-                                  "gap": 10,
+                                  "gap": 8,
                                 }
                               }
                             >
@@ -6351,11 +6586,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                   {
                                     "alignItems": "center",
                                     "flexDirection": "row",
-                                    "gap": 5,
+                                    "gap": 8,
                                     "justifyContent": "center",
                                   }
                                 }
                               >
+                                <Text
+                                  collapsable={false}
+                                  numberOfLines={1}
+                                  style={
+                                    {
+                                      "alignSelf": "flex-end",
+                                      "backgroundColor": "#FF0000",
+                                      "borderRadius": 10,
+                                      "color": "rgba(255, 255, 255, 1)",
+                                      "fontSize": 10,
+                                      "height": 20,
+                                      "lineHeight": 10,
+                                      "minWidth": 20,
+                                      "opacity": 1,
+                                      "overflow": "hidden",
+                                      "paddingHorizontal": 3,
+                                      "textAlign": "center",
+                                      "textAlignVertical": "center",
+                                    }
+                                  }
+                                >
+                                  6
+                                </Text>
                                 <Text
                                   style={
                                     [
@@ -6379,32 +6637,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                                     ]
                                   }
                                 >
-                                  User rating:
-                                </Text>
-                                <Text
-                                  collapsable={false}
-                                  numberOfLines={1}
-                                  style={
-                                    {
-                                      "alignSelf": "flex-end",
-                                      "backgroundColor": "#faaf00",
-                                      "borderRadius": 10,
-                                      "color": "rgba(255, 255, 255, 1)",
-                                      "fontSize": 10,
-                                      "height": 20,
-                                      "lineHeight": 10,
-                                      "minWidth": 20,
-                                      "opacity": 1,
-                                      "overflow": "hidden",
-                                      "paddingHorizontal": 3,
-                                      "textAlign": "center",
-                                      "textAlignVertical": "center",
-                                    }
-                                  }
-                                >
-                                  6.7
+                                  Okay
                                 </Text>
                               </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#3c3c3c",
+                                      "writingDirection": "ltr",
+                                    },
+                                    [
+                                      {
+                                        "fontFamily": "System",
+                                        "fontSize": 11,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.5,
+                                        "lineHeight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ]
+                                }
+                              >
+                                score from users!
+                              </Text>
                             </View>
                             <View
                               style={
@@ -6787,8 +7047,9 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                       <View
                         style={
                           {
+                            "alignItems": "center",
                             "flexDirection": "row",
-                            "gap": 10,
+                            "gap": 8,
                           }
                         }
                       >
@@ -6995,11 +7256,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                             {
                               "alignItems": "center",
                               "flexDirection": "row",
-                              "gap": 5,
+                              "gap": 8,
                               "justifyContent": "center",
                             }
                           }
                         >
+                          <Text
+                            collapsable={false}
+                            numberOfLines={1}
+                            style={
+                              {
+                                "alignSelf": "flex-end",
+                                "backgroundColor": "#f2007d",
+                                "borderRadius": 10,
+                                "color": "rgba(255, 255, 255, 1)",
+                                "fontSize": 10,
+                                "height": 20,
+                                "lineHeight": 10,
+                                "minWidth": 20,
+                                "opacity": 1,
+                                "overflow": "hidden",
+                                "paddingHorizontal": 3,
+                                "textAlign": "center",
+                                "textAlignVertical": "center",
+                              }
+                            }
+                          >
+                            8.7
+                          </Text>
                           <Text
                             style={
                               [
@@ -7023,32 +7307,34 @@ exports[`Hotel details should navigate to first hotel 1`] = `
                               ]
                             }
                           >
-                            User rating:
-                          </Text>
-                          <Text
-                            collapsable={false}
-                            numberOfLines={1}
-                            style={
-                              {
-                                "alignSelf": "flex-end",
-                                "backgroundColor": "#f2007d",
-                                "borderRadius": 10,
-                                "color": "rgba(255, 255, 255, 1)",
-                                "fontSize": 10,
-                                "height": 20,
-                                "lineHeight": 10,
-                                "minWidth": 20,
-                                "opacity": 1,
-                                "overflow": "hidden",
-                                "paddingHorizontal": 3,
-                                "textAlign": "center",
-                                "textAlignVertical": "center",
-                              }
-                            }
-                          >
-                            9.8
+                            Excellent
                           </Text>
                         </View>
+                        <Text
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "#3c3c3c",
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontFamily": "System",
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5,
+                                  "lineHeight": 16,
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          score from users!
+                        </Text>
                       </View>
                       <View
                         style={
