@@ -1,0 +1,10 @@
+frontend:
+  - src/**/*
+
+android:
+  - android/**/*
+
+ios:
+  - ios/**/*
+  - Gemfile
+  - Gemfile.lock
