@@ -193,7 +193,7 @@ export const Hotels: FC = memo(() => {
       ) : (
         <View style={hotelsStyles.emptyWrapper}>
           <Text variant="headlineMedium" style={hotelsStyles.emptyLabel}>
-            We couldn't find anything that matches your search.
+            We couldn't find anything that matches your search. :(
           </Text>
           <Icon source={'emoticon-sad'} size={68} color={COLORS.Gray} />
         </View>
