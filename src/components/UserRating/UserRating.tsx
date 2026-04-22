@@ -9,7 +9,7 @@ import { getBadgeColor } from './UserRating.helpers';
 const UserRating: FC<UserRatingProps> = ({ rate }) => (
   <View style={userRatingStyles.root}>
     <Badge style={{ backgroundColor: getBadgeColor(rate) }}>{rate}</Badge>
-    <Text variant="labelSmall">{Rating[rate]}</Text>
+    <Text variant="labelSmall">Rating: {Rating[rate]}</Text>
   </View>
 );
 
