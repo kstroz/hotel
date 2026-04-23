@@ -9,7 +9,7 @@ const Rating: FC<RatingProps> = ({
   rate,
   totalStars = 5,
   size = 18,
-  color = COLORS.Primary,
+  color = COLORS.Transparent,
 }) => {
   const stars = Array.from({ length: totalStars }, (_, index) => index < rate);
 
